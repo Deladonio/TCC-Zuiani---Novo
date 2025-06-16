@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instituição-Zuiani</title>
+<link rel="stylesheet" href="style_instt.css">
+<link rel="shortcut icon" href="../favicon_io/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<div class="barra-azul">
+    <div>
+        <a href="../Index/index.html">Início</a>
+        <a href="../Instituição/instituicao.html">Instituição</a>
+        <a href="../Atividades/atividades.html">Atividades</a>
+        <a href="../Comunicados/comunicados.html">Comunicados</a>
+        <a href="../Cadastro/cadastro.html">Cadastro</a>
+        
+    </div>
+
+    <div>
+        <input type="text" placeholder="Buscar...">
+        <button>Buscar</button>
+    </div>
+    
+</div>    
+    <h1>Nossa Instituição</h1>
+    
+    <div class="container">
+        <div class="menu-lateral">
+            <h3 onclick="toggleInstituicao()">Instituição</h3>
+            <ul id="submenu-instituicao" style="display: none;"></ul>
+        </div>
+        <div class="conteudo" id="conteudo-dinamico">
+            <!-- O conteúdo será carregado aqui -->
+            <p>Selecione uma opção no menu lateral para ver o conteúdo.</p>
+        </div>
+    </div>
+</body>
+<script src="script_inst.js"></script>
+</html>
