@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color:lightgray;
+    background-color:#fff;
 }
 
 button {
@@ -49,7 +49,7 @@ input {
 .inicio-container {
     max-width: 700px;
     margin: 40px auto 0 auto;
-    background: #fff;
+    background: lightgray;
     border-radius: 16px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     padding: 32px 24px 24px 24px;
@@ -98,7 +98,7 @@ input {
     flex-wrap: wrap;
 }
 .destaque-item {
-    background: #c5c2bd;
+    background: #fff;
     border-left: 6px solid #C9201B;
     border-radius: 10px;
     padding: 18px 20px;
@@ -118,6 +118,159 @@ input {
     font-size: 1rem;
 }
 
+/* Estilos para a seção institucional */
+.institucional-container {
+    max-width: 900px;
+    margin: 48px auto 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(201,32,27,0.10);
+    padding: 32px 24px 24px 24px;
+}
+.institucional-container h2 {
+    color: #C9201B;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.institucional-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.institucional-item {
+    background: linear-gradient(120deg, #f5f7fa 80%, #e3e0fc 100%);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(62,85,139,0.07);
+    padding: 18px 16px;
+    color: #222;
+    text-align: left;
+}
+.institucional-item h3 {
+    color: #3E558B;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+.institucional-item p {
+    font-size: 1rem;
+    margin: 0;
+}
+.social-link {
+    color: #C9201B;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 4px;
+    transition: color 0.2s;
+}
+.social-link:hover {
+    color: #3E558B;
+    text-decoration: underline;
+}
+.institucional-missao {
+    background: #e3e0fc;
+    border-radius: 12px;
+    padding: 18px 16px;
+    margin-top: 18px;
+    box-shadow: 0 2px 8px rgba(62,85,139,0.07);
+    text-align: center;
+}
+.institucional-missao h3 {
+    color: #C9201B;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+.institucional-missao p {
+    font-size: 1.08rem;
+    color: #222;
+    margin: 0;
+}
+
+/* Estilos para o bloco institucional unificado */
+.bloco-institucional {
+    max-width: 1000px;
+    margin: 48px auto 0 auto;
+    background: #c5c2bd;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(201,32,27,0.13);
+    padding: 36px 28px 28px 28px;
+}
+.bloco-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.bloco-header h1 {
+    color: #C9201B;
+    font-size: 2.3rem;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+.bloco-header .descricao-inicio {
+    color: #333;
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+}
+.logo-inicio {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(183,28,28,0.12);
+}
+.bloco-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.bloco-item {
+    background: linear-gradient(120deg, #f5f7fa 80%, #e3e0fc 100%);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(62,85,139,0.07);
+    padding: 18px 16px;
+    color: #222;
+    text-align: left;
+}
+.bloco-item h3 {
+    color: #3E558B;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+.bloco-item p {
+    font-size: 1rem;
+    margin: 0;
+}
+.social-link {
+    color: #C9201B;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 4px;
+    transition: color 0.2s;
+}
+.social-link:hover {
+    color: #3E558B;
+    text-decoration: underline;
+}
+.bloco-missao {
+    background: #eeeeee;
+    border-radius: 12px;
+    padding: 18px 16px;
+    box-shadow: 0 2px 8px rgba(62,85,139,0.07);
+    text-align: center;
+    grid-column: 1/-1;
+}
+.bloco-missao h3 {
+    color: #C9201B;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+.bloco-missao p {
+    font-size: 1.08rem;
+    color: #222;
+    margin: 0;
+}
+
 @media (max-width: 700px) {
     .destaques-inicio {
         flex-direction: column;
@@ -126,37 +279,21 @@ input {
     .inicio-container {
         padding: 16px 4px 12px 4px;
     }
-}
-
-@media (max-width: 600px) {
-  .main {
-    padding: 0 8px;
-    min-height: 100vh;
-  }
-  .box {
-    width: 100%;
-    min-width: unset;
-    max-width: 98vw;
-    padding: 18px 6px 16px 6px;
-    border-radius: 12px;
-  }
-  form {
-    padding-left: 0 !important;
-    width: 100%;
-  }
-  input, button {
-    font-size: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .senha {
-    padding-left: 0 !important;
-    text-align: right;
-  }
-}
-@media (max-width: 400px) {
-  .box {
-    padding: 10px 2px 10px 2px;
-    border-radius: 8px;
-  }
+    .institucional-container {
+        padding: 16px 4px 12px 4px;
+    }
+    .institucional-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .bloco-institucional {
+        padding: 16px 4px 12px 4px;
+    }
+    .bloco-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .bloco-header h1 {
+        font-size: 1.5rem;
+    }
 }

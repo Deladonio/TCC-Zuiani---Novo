@@ -125,7 +125,8 @@ h3 {
 
 #loc {
     background-color: #3E558B;
-    color: #000000;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 20px;
     background-size: cover;
     background-position: center;
@@ -138,7 +139,8 @@ h3 {
 #endereco
 {
     background-color: #3E558B;
-    color: #000000;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 20px;
     background-size: cover;
     background-position: center;

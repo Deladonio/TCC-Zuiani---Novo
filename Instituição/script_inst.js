@@ -18,12 +18,15 @@ const submenuItems = [
             </p>
         </div>`
     },
-    { text: 'Direção', id: 'direcao', content: `<h2>Direção</h2><p>Informações sobre a direção da escola.</p>` },
-    { text: 'Corpo docente', id: 'docente', content: `<h2>Corpo Docente</h2><p>Lista dos professores e suas áreas de atuação.</p>` },
+
+    { text: 'Direção', id: 'direcao', content: `<h2>Direção</h2><p>Informações sobre a direção da escola. <br> Fotos da Maria Helena(Diretora), Jussara(Vice Diretora), Gislene(Vice Diretora), Thais (Coordenadora), Camila (Coordenadora), Liliane</p>` },
+
+    { text: 'Corpo docente', id: 'docente', content: `<h2>Corpo Docente</h2><p>Lista dos professores e suas áreas de atuação. <br> Sandro(Professor), Aroldo(Professor), Antônio (Professor), Nilson (Professor), Luzia (Professor), Marcela (Professor)</p>` },
+
     { text: 'Localização', id: 'localizacao', content: `
       <h2 id="loc">Localização</h2>
       <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.731234745877!2d-49.05190812506675!3d-22.326002117372166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf66552ad0ea93%3A0x520a61cc60fc4953!2sLUIZ%20ZUIANI%20DR%20EE%20EJA%20-%20F%20e%20M!5e0!3m2!1spt-BR!2sbr!4v1749469289680!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p><br>
-      <p style="text-align: center;" id="endereco">R. Aviador Gomes Ribeiro, 34-60 - P.Paulistano, Bauru - SP, 17030-530</p>` }
+      <h3 style="text-align: center;" id="endereco">R. Aviador Gomes Ribeiro, 34-60 - P.Paulistano, Bauru - SP, 17030-530</h3>` }
 ];
 
 // Função para criar o submenu
