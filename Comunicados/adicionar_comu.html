@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração de Comunicados</title>
+    <link rel="stylesheet" href="adicionar_comu.css">
+    <link rel="shortcut icon" href="../favicon_io/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="alinhar">
+
+    <div class="admin-container">
+        <div class="admin-header">
+            <h1>Administração de Comunicados</h1>
+            <button class="btn-voltar" onclick="window.location.href='comunicados.html'">Voltar aos Comunicados</button>
+        </div>
+
+        <!-- Formulário para adicionar/editar comunicado -->
+        <div class="form-container">
+            <h2 id="form-title">Adicionar Novo Comunicado</h2>
+            <form id="comunicado-form">
+                <div class="form-group">
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="conteudo">Conteúdo:</label>
+                    <textarea id="conteudo" name="conteudo" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn-salvar">Salvar</button>
+                    <button type="button" class="btn-cancelar" onclick="cancelarEdicao()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Lista de comunicados existentes -->
+        <div class="lista-container">
+            <h2>Comunicados Existentes</h2>
+            <div id="lista-comunicados">
+                <!-- Os comunicados serão carregados aqui via JavaScript -->
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="adicionar_comu.js"></script>
+</body>
+
+</html>
+
