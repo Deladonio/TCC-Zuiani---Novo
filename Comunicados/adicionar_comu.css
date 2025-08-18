@@ -1,0 +1,324 @@
+.alinhar {
+    padding-top: 7.5em;
+}
+
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    background-color: #fff;
+    color: #3E558B;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+    background: #04194a;
+    color: #fff;
+}
+
+input {
+    padding: 5px;
+}
+
+/* Container principal da administração */
+.admin-container {
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px 24px 24px;
+}
+
+/* Header da administração */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #3E558B;
+}
+
+.admin-header h1 {
+    color: #3E558B;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.btn-voltar {
+    background-color: #3E558B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #2c5aa0;
+    transform: translateY(-1px);
+}
+
+/* Container do formulário */
+.form-container {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #dee2e6;
+}
+
+.form-container h2 {
+    color: #3E558B;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3E558B;
+    box-shadow: 0 0 0 2px rgba(62, 85, 139, 0.25);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.btn-salvar {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-salvar:hover {
+    background-color: #218838;
+    transform: translateY(-1px);
+}
+
+.btn-cancelar {
+    background-color: #6c757d;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-cancelar:hover {
+    background-color: #5a6268;
+    transform: translateY(-1px);
+}
+
+/* Container da lista */
+.lista-container {
+    margin-top: 30px;
+}
+
+.lista-container h2 {
+    color: #3E558B;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Item da lista de comunicados */
+.comunicado-admin-item {
+    background: #e3f2fd;
+    border-left: 6px solid #1565c0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(21,101,192,0.06);
+}
+
+.comunicado-admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.comunicado-admin-header h3 {
+    color: #1565c0;
+    margin: 0;
+    font-size: 1.2rem;
+    flex-grow: 1;
+}
+
+.comunicado-admin-acoes {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.btn-editar-admin {
+    background-color: #ffc107;
+    color: #212529;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 70px;
+}
+
+.btn-editar-admin:hover {
+    background-color: #e0a800;
+    transform: translateY(-1px);
+}
+
+.btn-remover-admin {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 70px;
+}
+
+.btn-remover-admin:hover {
+    background-color: #c82333;
+    transform: translateY(-1px);
+}
+
+.comunicado-admin-item p {
+    color: #444;
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Estado de edição */
+.editando {
+    border-left-color: #ffc107;
+    background-color: #fff3cd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .admin-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .admin-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .comunicado-admin-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .comunicado-admin-acoes {
+        align-self: flex-end;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .admin-container {
+        padding: 16px 4px 12px 4px;
+        margin: 20px 10px 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .admin-container {
+        padding: 16px 4px 12px 4px;
+    }
+    .comunicado-admin-item {
+        padding: 12px 8px;
+    }
+    .main {
+        padding: 0 8px;
+        min-height: 100vh;
+    }
+    .box {
+        width: 100%;
+        min-width: unset;
+        max-width: 98vw;
+        padding: 18px 6px 16px 6px;
+        border-radius: 12px;
+    }
+    form {
+        padding-left: 0 !important;
+        width: 100%;
+    }
+    input, button {
+        font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .senha {
+        padding-left: 0 !important;
+        text-align: right;
+    }
+}
+
+@media (max-width: 400px) {
+    .box {
+        padding: 10px 2px 10px 2px;
+        border-radius: 8px;
+    }
+}
