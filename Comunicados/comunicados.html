@@ -2,61 +2,67 @@
 <html lang="pt-BR">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comunicados</title>
-<link rel="stylesheet" href="style_comu.css">
-<link rel="shortcut icon" href="../favicon_io/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicados</title>
+    <link rel="stylesheet" href="style_comu.css">
+    <link rel="shortcut icon" href="../favicon_io/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
-    <div class="barra-azul">
-        <div>
-            <a href="../Index/index.html">Início</a>
-            <a href="../Instituição/instituicao.html">Instituição</a>
-            <a href="../Atividades/atividades.html">Atividades</a>
-            <a href="../Comunicados/comunicados.html">Comunicados</a>
-            <a href="../Cadastro/cadastro.html">Cadastro</a>
-        </div>
+    <header>
+        <div class="barra-azul">
+            <div>
+                <a href="../Index/index.html">Início</a>
+                <a href="../Instituição/instituicao.html">Instituição</a>
+                <a href="../Atividades/atividades.html">Atividades</a>
+                <a href="../Comunicados/comunicados.html">Comunicados</a>
+                <a href="../Cadastro/cadastro.html">Cadastro</a>
+            </div>
 
-    <div>
-        <input type="text" placeholder="Buscar...">
-        <button>Buscar</button>
-    </div>
+            <div>
+                <input type="text" placeholder="Buscar...">
+                <button>Buscar</button>
+            </div>
     
-</div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="comunicados-container">
+            <div class="header-comunicados">
+                <h1>Comunicados</h1>
+                <a href="adicionar_comu.html"><button class="btn-adicionar" onclick="adicionarComunicado()">Adicionar Comunicado</button></a>
+            </div>
+            <div class="comunicado-item">
+                <h3>Oficinas de Inverno</h3>
+                <p>As inscrições para as oficinas de inverno estão abertas até 20/06/2025. Participe!</p>
+            </div>
+            <div class="comunicado-item">
+                <h3>Recesso Escolar</h3>
+                <p>Informamos que o recesso escolar ocorrerá de 01/07/2025 a 15/07/2025. Retorno das aulas em 16/07/2025.</p>
+            </div>
+            <div class="comunicado-item">
+                <h3>Campanha do Agasalho</h3>
+                <p>Estamos arrecadando agasalhos para doação até o final de junho. Colabore e ajude quem precisa!</p>
+            </div>
+            <div class="comunicado-item">
+                <h3>Atualização de Dados</h3>
+                <p>Solicitamos que todos os responsáveis atualizem os dados cadastrais dos alunos até 10/06/2025.</p>
+            </div>
+            <div class="comunicado-item">
+                <h3>Reunião de Pais</h3>
+                <p>Lembramos que a reunião de pais será realizada no dia 15/06/2025, às 18h, no auditório da escola.</p>
+            </div>
+            <div class="comunicado-item">
+                <h3>Portal do Aluno</h3>
+                <p>O novo portal do aluno já está disponível! Acesse para acompanhar notas, atividades e comunicados.</p>
+            </div>
+        </div>
+    </main>
 
-<div class="comunicados-container">
-    <div class="header-comunicados">
-        <h1>Comunicados</h1>
-        <a href="adicionar_comu.html"><button class="btn-adicionar" onclick="adicionarComunicado()">Adicionar Comunicado</button></a>
-    </div>
-    <div class="comunicado-item">
-        <h3>Oficinas de Inverno</h3>
-        <p>As inscrições para as oficinas de inverno estão abertas até 20/06/2025. Participe!</p>
-    </div>
-    <div class="comunicado-item">
-        <h3>Recesso Escolar</h3>
-        <p>Informamos que o recesso escolar ocorrerá de 01/07/2025 a 15/07/2025. Retorno das aulas em 16/07/2025.</p>
-    </div>
-    <div class="comunicado-item">
-        <h3>Campanha do Agasalho</h3>
-        <p>Estamos arrecadando agasalhos para doação até o final de junho. Colabore e ajude quem precisa!</p>
-    </div>
-    <div class="comunicado-item">
-        <h3>Atualização de Dados</h3>
-        <p>Solicitamos que todos os responsáveis atualizem os dados cadastrais dos alunos até 10/06/2025.</p>
-    </div>
-    <div class="comunicado-item">
-        <h3>Reunião de Pais</h3>
-        <p>Lembramos que a reunião de pais será realizada no dia 15/06/2025, às 18h, no auditório da escola.</p>
-    </div>
-    <div class="comunicado-item">
-        <h3>Portal do Aluno</h3>
-        <p>O novo portal do aluno já está disponível! Acesse para acompanhar notas, atividades e comunicados.</p>
-    </div>
-</div>
+
 
 <script src="script_comu.js"></script>
 </body>
