@@ -1,4 +1,4 @@
-.barra-vermelha {
+.barra-azul {
     background-color: #C9201B; 
     color: #fff; 
     padding: 20px 20px;
@@ -10,13 +10,13 @@
     border-radius: 20px;
 }
 
-.barra-vermelha a {
+.barra-azul a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
 }
 
-.barra-vermelha a:hover {
+.barra-azul a:hover {
     text-decoration: underline;
 }
 

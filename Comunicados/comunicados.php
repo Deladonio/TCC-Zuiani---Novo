@@ -17,8 +17,8 @@
                 <a href="../Index/index.html">Início</a>
                 <a href="../Instituição/instituicao.html">Instituição</a>
                 <a href="../Atividades/atividades.html">Atividades</a>
-                <a href="../Comunicados/comunicados.html">Comunicados</a>
-                <a href="../Cadastro/cadastro.html">Cadastro</a>
+                <a href="../Comunicados/comunicados.php">Comunicados</a>
+                <a href="../Cadastro/cadastro.php">Cadastro</a>
             </div>
 
             <div>
@@ -32,8 +32,17 @@
     <main>
         <div class="comunicados-container">
             <div class="header-comunicados">
-                <h1>Comunicados</h1>
-                <a href="adicionar_comu.html"><button class="btn-adicionar" onclick="adicionarComunicado()">Adicionar Comunicado</button></a>
+                <?php
+                    session_start();
+                    if (isset($_SESSION['conectado']) and $_SESSION['conectado'] == true)
+                    {
+                        echo "<a href='adicionar_comu.html'>Adicionar Comunicado</a><br>";
+                    }
+                    else
+                    {
+                        echo "";
+                    }
+                ?>
             </div>
             <div class="comunicado-item">
                 <h3>Oficinas de Inverno</h3>
@@ -61,7 +70,7 @@
             </div>
         </div>
     </main>
-
+    
 
 
 <script src="script_comu.js"></script>
