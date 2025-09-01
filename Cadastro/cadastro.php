@@ -12,7 +12,7 @@
 <body>
     
     <header>
-        <div class="barra-azul">
+        <div class="barra-vermelha">
             <div>
                 <a href="../Index/index.html">Início</a>
                 <a href="../Instituição/instituicao.html">Instituição</a>
