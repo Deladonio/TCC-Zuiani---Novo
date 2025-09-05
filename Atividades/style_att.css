@@ -159,3 +159,118 @@ input {
     border-radius: 8px;
   }
 }
+
+/* Footer com Redes Sociais - Integrado ao Estilo do Usuário */
+
+footer {
+    background-color: #3E558B; /* Cor azul do footer original do usuário */
+    color: white;
+    padding: 1px 20px 20px; /* Padding original do usuário */
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    margin-bottom: 30px;
+}
+
+.footer-text h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.footer-text p {
+    color: #ccc;
+    font-size: 16px;
+}
+
+/* Social Media Icons Container - Usando nomenclatura do usuário */
+.social-midia {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Individual Social Icon - Usando nomenclatura do usuário */
+.social-icone {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Facebook Icon */
+.social-icone.facebook {
+    background-color: #1877f2;
+}
+
+.social-icone.facebook:hover {
+    background-color: #166fe5;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(24, 119, 242, 0.4);
+}
+
+/* Instagram Icon */
+.social-icone.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-icone.instagram:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(225, 48, 108, 0.4);
+}
+
+/* E-mail Icon */
+.social-icone.email {
+    background-color: #4285f4;
+}
+
+.social-icone.email:hover {
+    background-color: #3367d6;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(66, 133, 244, 0.4);
+}
+
+/* SVG Icons */
+.social-icone svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+/* Copyright - Sem border-top para manter consistência com o estilo do usuário */
+.copyright {
+    padding-top: 20px;
+    color: #999;
+    font-size: 14px;
+}
+
+/* Responsive Design - Adaptado ao estilo do usuário */
+@media (max-width: 768px) {
+    .social-midia {
+        gap: 15px;
+    }
+
+    .social-icone {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-icone svg {
+        width: 25px;
+        height: 25px;
+    }
+}

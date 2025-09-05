@@ -298,7 +298,7 @@ input {
     }
 }
 
-/* Daqui pra baixo, é o footer, com os sicones */
+/* Daqui pra baixo, é o footer, com os icones */
 
 footer {
     background-color: #3E558B;
@@ -326,7 +326,7 @@ footer {
     font-size: 16px;
 }
 
-/* Social Media Icons Container */
+/* Social Media Icones Container */
 .social-midia {
     display: flex;
     justify-content: center;
@@ -334,7 +334,7 @@ footer {
     margin-bottom: 30px;
 }
 
-/* Individual Social Icon */
+/* Individual Social Icone */
 .social-icone {
     width: 60px;
     height: 60px;
@@ -348,7 +348,7 @@ footer {
     overflow: hidden;
 }
 
-/* Facebook Icon */
+/* Facebook Icone */
 .social-icone.facebook {
     background-color: #1877f2;
 }
@@ -359,7 +359,7 @@ footer {
     box-shadow: 0 10px 20px rgba(24, 119, 242, 0.4);
 }
 
-/* Instagram Icon */
+/* Instagram Icone */
 .social-icone.instagram {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
@@ -369,7 +369,7 @@ footer {
     box-shadow: 0 10px 20px rgba(225, 48, 108, 0.4);
 }
 
-/* E-mail Icon */
+/* E-mail Icone */
 .social-icone.email {
     background-color: #4285f4;
 }
@@ -380,7 +380,7 @@ footer {
     box-shadow: 0 10px 20px rgba(66, 133, 244, 0.4);
 }
 
-/* SVG Icons */
+/* SVG Icones */
 .social-icone svg {
     width: 30px;
     height: 30px;
@@ -394,18 +394,18 @@ footer {
     font-size: 14px;
 }
 
-/* Responsive Design */
+/* Design Responsive */
 @media (max-width: 768px) {
     .social-midia {
         gap: 15px;
     }
 
-    .social-icon {
+    .social-icone {
         width: 50px;
         height: 50px;
     }
 
-    .social-icon svg {
+    .social-icone svg {
         width: 25px;
         height: 25px;
     }
