@@ -1,3 +1,19 @@
+.btn-logout {
+    background: #C9201B;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s;
+    display: inline-block;
+    margin-left: 12px;
+    border: none;
+}
+.btn-logout:hover {
+    background: #a71d2a;
+    color: #fff;
+}
 /* Estilo para a barra azul no topo da página */
 .barra-azul {
     background-color: #3E558B; 
@@ -22,7 +38,7 @@
 }
 
 body {
-    background-color:lightgray;
+    background-color: lightgray;
 }
 
 button {
@@ -43,7 +59,6 @@ button:hover {
 
 input {
     padding: 5px;
-    
 }
 
 /* Container principal dos comunicados */
@@ -55,12 +70,14 @@ input {
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     padding: 32px 24px 24px 24px;
 }
+
 .comunicados-container h1 {
     color: #1565c0;
     font-size: 2.2rem;
     margin-bottom: 24px;
     text-align: center;
 }
+
 .comunicado-item {
     background: #e3f2fd;
     border-left: 6px solid #1565c0;
@@ -69,11 +86,13 @@ input {
     margin-bottom: 22px;
     box-shadow: 0 2px 8px rgba(21,101,192,0.06);
 }
+
 .comunicado-item h3 {
     margin: 0 0 8px 0;
     color: #1565c0;
     font-size: 1.18rem;
 }
+
 .comunicado-item p {
     margin: 0 0 6px 0;
     color: #444;
@@ -87,45 +106,46 @@ input {
     .comunicado-item {
         padding: 12px 8px;
     }
-  .main {
-    padding: 0 8px;
-    min-height: 100vh;
-  }
-  .box {
-    width: 100%;
-    min-width: unset;
-    max-width: 98vw;
-    padding: 18px 6px 16px 6px;
-    border-radius: 12px;
-  }
-  form {
-    padding-left: 0 !important;
-    width: 100%;
-  }
-  input, button {
-    font-size: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .senha {
-    padding-left: 0 !important;
-    text-align: right;
-  }
+    .main {
+        padding: 0 8px;
+        min-height: 100vh;
+    }
+    .box {
+        width: 100%;
+        min-width: unset;
+        max-width: 98vw;
+        padding: 18px 6px 16px 6px;
+        border-radius: 12px;
+    }
+    form {
+        padding-left: 0 !important;
+        width: 100%;
+    }
+    input, button {
+        font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .senha {
+        padding-left: 0 !important;
+        text-align: right;
+    }
 }
+
 @media (max-width: 400px) {
-  .box {
-    padding: 10px 2px 10px 2px;
-    border-radius: 8px;
-  }
+    .box {
+        padding: 10px 2px 10px 2px;
+        border-radius: 8px;
+    }
 }
 
 .header-comunicados {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* botão sempre à direita */
     align-items: center;
     margin-bottom: 30px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #2c5aa0;
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
 .header-comunicados h1 {
@@ -134,24 +154,26 @@ input {
     font-size: 2.5em;
 }
 
-/* Botão adicionar comunicado */
+/* Botão adicionar comunicado - verde e à direita */
 .btn-adicionar {
-    background-color: #3E558B;
-    color: white;
-    border: none;
-    padding: 12px 24px;
+    background: #28a745;
+    color: #fff;
+    padding: 8px 18px;
     border-radius: 6px;
     font-size: 16px;
     font-weight: 600;
+    text-decoration: none;     /* sem sublinhado */
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: inline-block;
+    margin-bottom: 0;
+    border: none;
 }
 
 .btn-adicionar:hover {
-    background-color: #2c5aa0;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    background: #218838;
+    color: #fff;
 }
 
 /* Header do comunicado individual */
@@ -238,5 +260,3 @@ input {
         padding: 0 15px;
     }
 }
-
-

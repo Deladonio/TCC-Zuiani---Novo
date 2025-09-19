@@ -9,23 +9,28 @@
     <link rel="shortcut icon" href="../favicon_io/favicon.ico" type="image/x-icon">
 </head>
 
+<?php session_start(); ?>
 <body>
 
     <header>
         <div class="barra-azul">
             <div>
-                <a href="../Index/index.html">Início</a>
-                <a href="../Instituição/instituicao.html">Instituição</a>
-                <a href="../Atividades/atividades.html">Atividades</a>
+                <a href="../Index/index.php">Início</a>
+                <a href="../Instituição/instituicao.php">Instituição</a>
+                <a href="../Atividades/atividades.php">Atividades</a>
                 <a href="../Comunicados/comunicados.php">Comunicados</a>
-                <a href="../Cadastro/cadastro.php">Cadastro</a>
+                <?php if (!isset($_SESSION['conectado']) || $_SESSION['conectado'] !== true): ?>
+                    <a href="../Cadastro/cadastro.php">Cadastro</a>
+                <?php endif; ?>
+                <?php if (isset($_SESSION['conectado']) && $_SESSION['conectado'] === true): ?>
+                    <a href="../Cadastro/logout.php" class="btn-logout">Sair</a>
+                <?php endif; ?>
             </div>
 
             <div>
                 <input type="text" placeholder="Buscar...">
                 <button>Buscar</button>
             </div>
-    
         </div>
     </header>
     
@@ -33,16 +38,9 @@
         <div class="comunicados-container">
             <div class="header-comunicados">
                 <?php
-                    session_start();
-                    if (isset($_SESSION['conectado']) and $_SESSION['conectado'] == true)
-                    {
-                        echo "<a href='adicionar_comu.html'>Adicionar Comunicado</a><br>";
-                    }
-                    else
-                    {
-                        echo "";
-                    }
-                ?>
+                    if (!empty($_SESSION['conectado'])): ?>
+                        <a class='btn-adicionar' href='adicionar_comu.html'>Adicionar Comunicado</a>
+                    <?php endif; ?>
             </div>
             <div class="comunicado-item">
                 <h3>Oficinas de Inverno</h3>

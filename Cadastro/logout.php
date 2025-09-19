@@ -1,9 +1,9 @@
 <?php
-    session_destroy(); //destroi a sessão
-    setcookie("PHPSESSID", "", time() - 3600); //apaga o cookie da sessão
-    session_start();
-    session_regenerate_id();
-    unset($_SESSION['conectado']);
-    unset($_SESSION['login']);
-    header("Location: cadastro.php"); //redireciona para cadastro.php
+session_start();
+session_unset(); // Remove todas as variáveis de sessão
+session_destroy(); // Destroi a sessão
+
+// Redireciona para a página inicial ou de login
+header("Location: ../Index/index.php");
+exit();
 ?>

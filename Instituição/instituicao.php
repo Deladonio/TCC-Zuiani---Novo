@@ -12,13 +12,19 @@
 <body>
 
     <header>
+        <?php session_start(); ?>
         <div class="barra-azul">
             <div>
-                <a href="../Index/index.html">Início</a>
-                <a href="../Instituição/instituicao.html">Instituição</a>
-                <a href="../Atividades/atividades.html">Atividades</a>
+                <a href="../Index/index.php">Início</a>
+                <a href="../Instituição/instituicao.php">Instituição</a>
+                <a href="../Atividades/atividades.php">Atividades</a>
                 <a href="../Comunicados/comunicados.php">Comunicados</a>
-                <a href="../Cadastro/cadastro.php">Cadastro</a>
+                <?php if (!isset($_SESSION['conectado']) || $_SESSION['conectado'] !== true): ?>
+                    <a href="../Cadastro/cadastro.php">Cadastro</a>
+                <?php endif; ?>
+                <?php if (isset($_SESSION['conectado']) && $_SESSION['conectado'] === true): ?>
+                    <a href="../Cadastro/logout.php" class="btn-logout">Sair</a>
+                <?php endif; ?>
             </div>
 
             <div>

@@ -48,6 +48,7 @@ function createSubmenu() {
             e.preventDefault();
             setActiveMenu(idx);
             loadConteudo(item.content);
+            
         };
         li.appendChild(a);
         submenu.appendChild(li);

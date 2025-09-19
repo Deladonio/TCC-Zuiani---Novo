@@ -322,3 +322,19 @@ input {
         border-radius: 8px;
     }
 }
+
+.btn-adicionar {
+  background: #06a71b;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.btn-adicionar:hover {
+  background: #028d19;
+  color: #ffdc00;
+}
