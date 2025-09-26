@@ -203,7 +203,7 @@ footer {
 }
 
 .footer-text p {
-    color: #ccc;
+    color: white;
     font-size: 16px;
 }
 
@@ -271,7 +271,7 @@ footer {
 /* Copyright - Sem border-top para manter consistência com o estilo do usuário */
 .copyright {
     padding-top: 20px;
-    color: #999;
+    color: white;
     font-size: 14px;
 }
 
