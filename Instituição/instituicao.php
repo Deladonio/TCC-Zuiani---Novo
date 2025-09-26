@@ -36,17 +36,20 @@
     </header>
 
         
-    <main>
-        <h1>Nossa Instituição</h1>
+    <main class="main-instituicao">
+        <section class="instituicao-hero">
+            <h1>Nossa Instituição</h1>
+            <p class="instituicao-desc">Conheça a história, missão e equipe da <span class="destaque">E.E. Dr. Luiz Zuiani</span></p>
+        </section>
         <div class="container">
-            <div class="menu-lateral">
-                <h3 onclick="toggleInstituicao()">Instituição</h3>
+            <aside class="menu-lateral shadow">
+                <h3 onclick="toggleInstituicao()">Instituição <span style="font-size:1.1em;">▼</span></h3>
                 <ul id="submenu-instituicao" style="display: none;"></ul>
-            </div>
-            <div class="conteudo" id="conteudo-dinamico">
+            </aside>
+            <section class="conteudo" id="conteudo-dinamico">
                 <!-- O conteúdo será carregado aqui -->
                 <p>Selecione uma opção no menu lateral para ver o conteúdo.</p>
-            </div>
+            </section>
         </div>
     </main>
 
