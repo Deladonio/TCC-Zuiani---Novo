@@ -37,50 +37,39 @@
 
 
     <main>
-        <div class="bloco-institucional">
-            <div class="bloco-header">
-                <img src="../favicon_io/android-chrome-192x192.png" alt="Logo Zuiani" class="logo-inicio">
-                <h1>Bem-vindo ao Zuiani-Bauru</h1>
-                <p class="descricao-inicio">
-                Somos uma instituição dedicada à educação, inclusão e desenvolvimento social em Bauru e região. Nosso objetivo é transformar vidas por meio de projetos, atividades e eventos que promovem o crescimento pessoal e coletivo.
-                </p>
-                <a href="../Instituição/instituicao.html" class="botao-saiba-mais">Saiba mais sobre nós</a>
+        <section class="main-destaque" style="text-align:center; padding: 32px 0; background: #f8f8f8; border-radius: 12px; margin-bottom: 32px;">
+            <img src="../favicon_io/android-chrome-192x192.png" alt="Logo Zuiani" style="width: 90px; margin-bottom: 12px;">
+            <h1 style="margin-bottom: 8px;">Bem-vindo ao Zuiani-Bauru</h1>
+            <p style="font-size: 1.1em; max-width: 600px; margin: 0 auto 18px auto;">Instituição dedicada à educação, inclusão e desenvolvimento social em Bauru e região. Transformando vidas por meio de projetos, atividades e eventos.</p>
+            <div style="margin: 18px 0 0 0; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+                <a href="https://sed.educacao.sp.gov.br/" target="_blank" class="botao-saiba-mais" style="background: #1976d2; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none;">Acessar SED</a>
+                <a href="https://saladofuturo.educacao.sp.gov.br/" target="_blank" class="botao-saiba-mais" style="background: #43a047; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none;">Sala do Futuro</a>
+                <a href="../Instituição/instituicao.php" class="botao-saiba-mais" style="background: #e53935; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none;">Sobre a Escola</a>
             </div>
-            <div class="bloco-grid">
-                <div class="bloco-item">
-                    <h3>Próximo Evento</h3>
-                    <p>Reunião de pais - 15/06/2025</p>
-                    <p>Pais e responsáveis, venha participar da nossa reunião sobre o desempenho dos nossos alunos na nossa escola.</p>
-                </div>
-                <div class="bloco-item">
-                    <h3>Novidade</h3>
-                    <p>Lançamos o novo portal do aluno!</p>
-                    <p>Acesse e confira os recursos exclusivos!</p>
-                </div>
-                <div class="bloco-item">
-                    <h3>Aviso Importante</h3>
-                    <p>As inscrições para oficinas de inverno estão abertas.</p>
-                    <p>Garanta sua vaga!</p>
-                </div>
-                <div class="bloco-item">
-                    <h3>Horário de Funcionamento</h3>
-                    <p>Segunda a Sexta: 7h às 22h<br>Sábado: 8h às 12h<br>Domingo: Fechado</p>
-                </div>
-                <div class="bloco-item">
-                    <h3>Contato</h3>
-                    <p>Telefone: (14) 3234-5678<br>Email: zuiani@escola.sp.gov.br</p>
-                </div>
-                <div class="bloco-item">
-                    <h3>Endereço</h3>
-                    <p>R. Aviador Gomes Ribeiro, 34-60<br>P.Paulistano, Bauru - SP, 17030-530</p>
-                </div>
-                <div class="bloco-item bloco-missao">
-                    <h3>Missão & Valores</h3>
-                    <p>Promover educação de qualidade, inclusão e desenvolvimento social, formando cidadãos preparados para transformar a sociedade.</p>
-                </div>
+        </section>
+
+        <section class="main-info" style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;">
+            <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; min-width: 220px; max-width: 320px; flex: 1 1 220px;">
+                <h3 style="color: #1976d2;">Horário de Funcionamento</h3>
+                <p>Segunda a Sexta: <b>7h às 22h</b><br>Sábado: <b>8h às 12h</b><br>Domingo: <b>Fechado</b></p>
             </div>
-        </div>
-        <a href="../Comunicados/comunicados.html" class="botao-saiba-mais" style="display: block; width: fit-content; margin: 32px auto 0 auto;">Tenha acesso a todos os comunicados</a> <br> <br> <br>
+            <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; min-width: 220px; max-width: 320px; flex: 1 1 220px;">
+                <h3 style="color: #e53935;">Próximo Evento</h3>
+                <p>Reunião de pais - 15/06/2025</p>
+                <p style="font-size: 0.98em;">Pais e responsáveis, participe da reunião sobre o desempenho dos alunos.</p>
+            </div>
+            <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; min-width: 220px; max-width: 320px; flex: 1 1 220px;">
+                <h3 style="color: #6d4c41;">Contato</h3>
+                <p>Telefone: (14) 3234-5678<br>Email: zuiani@escola.sp.gov.br</p>
+            </div>
+            <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; min-width: 220px; max-width: 320px; flex: 1 1 220px;">
+                <h3 style="color: #00897b;">Missão & Valores</h3>
+                <p>Promover educação de qualidade, inclusão e desenvolvimento social, formando cidadãos preparados para transformar a sociedade.</p>
+            </div>
+        </section>
+
+        <a href="../Comunicados/comunicados.php" class="botao-saiba-mais" style="display: block; width: fit-content; margin: 32px auto 0 auto; background: #1976d2; color: #fff; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Acesse todos os comunicados</a>
+        <br><br><br>
     </main>
 
     <footer>

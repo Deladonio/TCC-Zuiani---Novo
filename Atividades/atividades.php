@@ -35,45 +35,44 @@
     </header>
 
     <main>
-        <div class="atividades-container">
-            <h1>Atividades</h1>
-            <p class="descricao-atividades"> Oferecemos diversas atividades para promover o desenvolvimento integral dos nossos alunos. Confira abaixo algumas das principais opções disponíveis: </p>
+        <section class="atividades-destaque" style="text-align:center; padding: 36px 0 24px 0; background: #f8f8f8; border-radius: 14px; margin-bottom: 36px;">
+            <h1 style="color: #C9201B; font-size: 2.4rem; margin-bottom: 10px;">Atividades Zuiani</h1>
+            <p style="font-size: 1.18rem; max-width: 650px; margin: 0 auto 18px auto; color: #333;">Aqui você encontra oportunidades para desenvolver talentos, aprender novas habilidades e se divertir! Escolha sua atividade favorita e faça parte dos nossos projetos.</p>
+            <a href="#" class="botao-inscricao" style="margin-top: 18px; background: #1976d2; color: #fff; padding: 14px 36px; border-radius: 8px; font-size: 1.15rem;">Quero participar!</a>
+        </section>
 
-            <div class="atividades-lista">
-                <div class="atividade-item">
-                    <h3>Oficina de Artes</h3>
-                    <p>Desenvolva a criatividade com pintura, desenho, escultura e outras técnicas artísticas.</p>
-                </div>
-
-                <div class="atividade-item">
-                    <h3>Reforço Escolar</h3>
-                    <p>Aulas de apoio em matemática, português e ciências para melhorar o desempenho escolar.</p>
-                </div>
-
-                <div class="atividade-item">
-                    <h3>Esportes</h3>
-                    <p>Futebol, vôlei, basquete e outras modalidades para incentivar o trabalho em equipe e a saúde.</p>
-                </div>
-
-                <div class="atividade-item">
-                    <h3>Informática</h3>
-                    <p>Aprenda noções básicas de computação, digitação e navegação segura na internet.</p>
-                </div>
-
-                <div class="atividade-item">
-                    <h3>Música</h3>
-                    <p>Aulas de canto, violão e instrumentos para despertar o talento musical.</p>
-                </div>
-
-                <div class="atividade-item">
-                    <h3>Projetos Especiais</h3>
-                    <p>Participe de eventos, passeios culturais e projetos temáticos ao longo do ano.</p>
-                </div>
-
+        <section class="atividades-grid" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">
+            <div class="atividade-card card-artes">
+                <span class="atividade-icone">🎨</span>
+                <h2>Oficina de Artes</h2>
+                <p>Desenvolva a criatividade com pintura, desenho, escultura e outras técnicas artísticas.</p>
             </div>
-
-            <a href="#" class="botao-inscricao">Quero participar!</a>
-        </div>
+            <div class="atividade-card card-reforco">
+                <span class="atividade-icone">📚</span>
+                <h2>Reforço Escolar</h2>
+                <p>Aulas de apoio em matemática, português e ciências para melhorar o desempenho escolar.</p>
+            </div>
+            <div class="atividade-card card-esportes">
+                <span class="atividade-icone">🏀</span>
+                <h2>Esportes</h2>
+                <p>Futebol, vôlei, basquete e outras modalidades para incentivar o trabalho em equipe e a saúde.</p>
+            </div>
+            <div class="atividade-card card-informatica">
+                <span class="atividade-icone">💻</span>
+                <h2>Informática</h2>
+                <p>Aprenda noções básicas de computação, digitação e navegação segura na internet.</p>
+            </div>
+            <div class="atividade-card card-musica">
+                <span class="atividade-icone">🎵</span>
+                <h2>Música</h2>
+                <p>Aulas de canto, violão e instrumentos para despertar o talento musical.</p>
+            </div>
+            <div class="atividade-card card-projetos">
+                <span class="atividade-icone">🌟</span>
+                <h2>Projetos Especiais</h2>
+                <p>Participe de eventos, passeios culturais e projetos temáticos ao longo do ano.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
