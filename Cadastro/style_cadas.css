@@ -59,7 +59,7 @@ body {
 
 button {
     background-color: #fff;
-    color: #C9201B;
+    color: #3E558B;
     border: none;
     padding: 5px;
     border-radius: 5px;
@@ -69,7 +69,7 @@ button {
 }
 
 button:hover {
-    background: #6e0905;
+    background: #04194a;
     color: #fff;
 }
 
