@@ -15,8 +15,8 @@
     color: #fff;
 }
 /* Estilo para a barra azul no topo da página */
-.barra-azul {
-    background-color: #3E558B; 
+.barra-vermelha {
+    background-color: #C9201B; 
     color: #fff; 
     padding: 20px 20px;
     display: flex;
@@ -27,13 +27,13 @@
     border-radius: 20px;
 }
 
-.barra-azul a {
+.barra-vermelha a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
 }
 
-.barra-azul a:hover {
+.barra-vermelha a:hover {
     text-decoration: underline;
 }
 
@@ -264,7 +264,7 @@ input {
 
 
 footer {
-    background-color: #C9201B; /* Cor azul do footer original do usuário */
+    background-color: #3E558B; /* Cor azul do footer original do usuário */
     color: white;
     padding: 1px 20px 20px; /* Padding original do usuário */
     text-align: center;

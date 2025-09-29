@@ -51,16 +51,16 @@
         <section class="main-info" style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;">
             <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; min-width: 220px; max-width: 320px; flex: 1 1 220px;">
                 <h3 style="color: #1976d2;">Horário de Funcionamento</h3>
-                <p>Segunda a Sexta: <b>7h às 22h</b><br>Sábado: <b>8h às 12h</b><br>Domingo: <b>Fechado</b></p>
+                <p>Segunda a Sexta: <b>7h às 22h</b> <br><br> Sábado e Domingo: <b>Fechado</b></p>
             </div>
             <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; min-width: 220px; max-width: 320px; flex: 1 1 220px;">
                 <h3 style="color: #e53935;">Próximo Evento</h3>
-                <p>Reunião de pais - 15/06/2025</p>
-                <p style="font-size: 0.98em;">Pais e responsáveis, participe da reunião sobre o desempenho dos alunos.</p>
+                <p>Visita ao Zoológico - 25/12/2025</p>
+                <p style="font-size: 0.98em;">Alunos e colaboradores. Participem do nosso passeio para o Zoológico de Bauru </p>
             </div>
             <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; min-width: 220px; max-width: 320px; flex: 1 1 220px;">
                 <h3 style="color: #6d4c41;">Contato</h3>
-                <p>Telefone: (14) 3234-5678<br>Email: zuiani@escola.sp.gov.br</p>
+                <p>Telefone: (14) 3203-2553 <br> <br> Email: e025276a@educacao.sp.gov.br</p>
             </div>
             <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; min-width: 220px; max-width: 320px; flex: 1 1 220px;">
                 <h3 style="color: #00897b;">Missão & Valores</h3>
