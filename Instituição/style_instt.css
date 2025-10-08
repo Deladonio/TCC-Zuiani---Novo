@@ -89,6 +89,7 @@ input {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: none; /* start hidden to avoid showing the list on page load */
 }
 
 #submenu-instituicao li {
@@ -347,3 +348,16 @@ footer {
         height: 25px;
     }
 }
+
+/* --- ANIMAÇÃO DA SETA DO MENU INSTITUIÇÃO --- */
+.arrow {
+  display: inline-block;
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+/* quando o menu estiver aberto, rotaciona a seta */
+.open .arrow {
+  transform: rotate(90deg);
+}
+

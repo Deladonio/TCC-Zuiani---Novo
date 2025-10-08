@@ -28,7 +28,6 @@ const submenuItems = [
       <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.731234745877!2d-49.05190812506675!3d-22.326002117372166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf66552ad0ea93%3A0x520a61cc60fc4953!2sLUIZ%20ZUIANI%20DR%20EE%20EJA%20-%20F%20e%20M!5e0!3m2!1spt-BR!2sbr!4v1749469289680!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p><br>
       <h3 style="text-align: center;" id="endereco">R. Aviador Gomes Ribeiro, 34-60 - P.Paulistano, Bauru - SP, 17030-530</h3>` }
 ];
-
 // Função para criar o submenu
 function createSubmenu() {
     const submenu = document.getElementById('submenu-instituicao');
@@ -48,7 +47,6 @@ function createSubmenu() {
             e.preventDefault();
             setActiveMenu(idx);
             loadConteudo(item.content);
-            
         };
         li.appendChild(a);
         submenu.appendChild(li);
@@ -73,12 +71,17 @@ function loadConteudo(html) {
     if (conteudo) conteudo.innerHTML = html;
 }
 
-// Função para alternar a visibilidade do submenu
+// Função para alternar a visibilidade do submenu e a classe da seta
 function toggleInstituicao() {
     const submenu = document.getElementById('submenu-instituicao');
-    if (submenu) {
-        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-    }
+    const titulo = document.getElementById('titulo-instituicao');
+    if (!submenu || !titulo) return;
+
+    const isOpen = submenu.style.display === 'block';
+
+    submenu.style.display = isOpen ? 'none' : 'block';
+    titulo.classList.toggle('open', !isOpen);
+    titulo.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
 }
 
 // Carrega o submenu quando a página é carregada
@@ -87,4 +90,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Carrega o primeiro item por padrão
     setActiveMenu(0);
     loadConteudo(submenuItems[0].content);
+
+    // Garantir submenu oculto ao carregar a página
+    const submenuEl = document.getElementById('submenu-instituicao');
+    const tituloEl = document.getElementById('titulo-instituicao');
+    if (submenuEl) submenuEl.style.display = 'none';
+    if (tituloEl) {
+        tituloEl.classList.remove('open');
+        tituloEl.setAttribute('aria-expanded', 'false');
+    }
 });
