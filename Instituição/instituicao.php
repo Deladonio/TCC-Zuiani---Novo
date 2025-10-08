@@ -42,9 +42,9 @@
             <p class="instituicao-desc">Conheça a história, missão e equipe da <span class="destaque">E.E. Dr. Luiz Zuiani</span></p>
         </section>
         <div class="container">
-            <aside class="menu-lateral shadow">
-                <h3 onclick="toggleInstituicao()">Instituição <span style="font-size:1.1em;">▼</span></h3>
-                <ul id="submenu-instituicao" style="display: none;"></ul>
+            <aside class="menu-lateral shadow" id="aside-instituicao">
+                <h3 onclick="toggleInstituicao()" id="titulo-instituicao">Instituição <span class="arrow">ᐳ</span></h3>
+                <ul id="submenu-instituicao"></ul>
             </aside>
             <section class="conteudo" id="conteudo-dinamico">
                 <!-- O conteúdo será carregado aqui -->

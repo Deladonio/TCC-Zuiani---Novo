@@ -45,7 +45,6 @@
         </div>
 
         <?php
-            session_start(); //inicia a sessão
             if ($_POST)
             {
                 $usuario = $_POST['email'];
