@@ -1,5 +1,5 @@
 .btn-logout {
-    background: #3E558B;
+    background: #C9201B;
     color: #fff;
     padding: 8px 18px;
     border-radius: 6px;
@@ -11,7 +11,7 @@
     border: none;
 }
 .btn-logout:hover {
-    background: #1c3774;
+    background: #830b07;
     color: #fff;
 }
 
@@ -120,22 +120,25 @@ input {
 .card-informatica { border-top: 7px solid #3949ab; }
 .card-musica { border-top: 7px solid #fbc02d; }
 .card-projetos { border-top: 7px solid #6d4c41; }
+
 .botao-inscricao {
     display: block;
     margin: 0 auto;
+    margin-top: 18px;
     padding: 12px 32px;
-    background: #C9201B;
+    background: #1976d2;
     color: #fff;
-    border-radius: 24px;
+    padding: 14px 36px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     transition: background 0.2s;
     width: fit-content;
     box-shadow: 0 2px 8px rgba(56,142,60,0.10);
 }
 .botao-inscricao:hover {
-    background: #990c07;
+    background: #063299;
 }
 
 @media (max-width: 700px) {

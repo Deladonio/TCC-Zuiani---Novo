@@ -38,7 +38,7 @@
         <section class="atividades-destaque" style="text-align:center; padding: 36px 0 24px 0; background: #f8f8f8; border-radius: 14px; margin-bottom: 36px;">
             <h1 style="color: #C9201B; font-size: 2.4rem; margin-bottom: 10px;">Atividades Zuiani</h1>
             <p style="font-size: 1.18rem; max-width: 650px; margin: 0 auto 18px auto; color: #333;">Aqui você encontra oportunidades para desenvolver talentos, aprender novas habilidades e se divertir! Escolha sua atividade favorita e faça parte dos nossos projetos.</p>
-            <a href="https://docs.google.com/forms/d/1GTfVKBD2kzCAdnnBHWL-HH170kiUzbuYRDnj_HeKdUI/edit"  target="_blank" class="botao-inscricao" style="margin-top: 18px; background: #1976d2; color: #fff; padding: 14px 36px; border-radius: 8px; font-size: 1.15rem;">Quero participar!</a>
+            <a href="https://docs.google.com/forms/d/1GTfVKBD2kzCAdnnBHWL-HH170kiUzbuYRDnj_HeKdUI/edit"  target="_blank" class="botao-inscricao">Quero participar!</a>
         </section>
 
         <section class="atividades-grid" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">

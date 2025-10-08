@@ -43,28 +43,28 @@
                     <?php endif; ?>
             </div>
             <div class="comunicado-item">
-                <h3>Oficinas de Inverno</h3>
-                <p>As inscrições para as oficinas de inverno estão abertas até 20/06/2025. Participe!</p>
+                <h3>Novo Site do Zuiani</h3>
+                <p>O novo site para alunos, pais e docentes já está disponível! Acesse para acompanhar localidade, atividades e comunicados.</p> 
             </div>
             <div class="comunicado-item">
-                <h3>Recesso Escolar</h3>
-                <p>Informamos que o recesso escolar ocorrerá de 01/07/2025 a 15/07/2025. Retorno das aulas em 16/07/2025.</p>
+                <h3>Passeio ao Zoológico</h3>
+                <p>As inscrições para o Zoológico estão abertas até 01/12/2025. Participe!</p>
             </div>
             <div class="comunicado-item">
                 <h3>Campanha do Agasalho</h3>
-                <p>Estamos arrecadando agasalhos para doação até o final de junho. Colabore e ajude quem precisa!</p>
+                <p>Estamos arrecadando agasalhos para doação até o final de dezembro. Colabore e ajude quem precisa!</p>
+            </div>
+            <div class="comunicado-item">
+                <h3>Recesso Escolar</h3>
+                <p>Informamos que o recesso escolar ocorrerá de 15/12/2025 a 30/01/2026. Retorno das aulas em 02/02/2026.</p>
             </div>
             <div class="comunicado-item">
                 <h3>Atualização de Dados</h3>
-                <p>Solicitamos que todos os responsáveis atualizem os dados cadastrais dos alunos até 10/06/2025.</p>
+                <p>Solicitamos que todos os responsáveis atualizem os dados cadastrais dos alunos até 02/02/2026.</p>
             </div>
             <div class="comunicado-item">
                 <h3>Reunião de Pais</h3>
-                <p>Lembramos que a reunião de pais será realizada no dia 15/06/2025, às 18h, no auditório da escola.</p>
-            </div>
-            <div class="comunicado-item">
-                <h3>Portal do Aluno</h3>
-                <p>O novo portal do aluno já está disponível! Acesse para acompanhar notas, atividades e comunicados.</p>
+                <p>Lembramos que a reunião de pais será realizada no dia 15/03/2026, às 10h, no auditório da escola.</p>
             </div>
         </div>
     </main>

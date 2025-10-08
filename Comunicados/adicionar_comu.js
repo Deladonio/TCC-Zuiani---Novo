@@ -2,13 +2,13 @@
 let comunicados = [
     {
         id: 1,
-        titulo: "Oficinas de Inverno",
-        conteudo: "As inscrições para as oficinas de inverno estão abertas até 20/06/2025. Participe!"
+        titulo: "Novo Site do Zuiani",
+        conteudo: "O novo site para alunos, pais e docentes já está disponível! Acesse para acompanhar localidade, atividades e comunicados."
     },
     {
         id: 2,
-        titulo: "Recesso Escolar",
-        conteudo: "Informamos que o recesso escolar ocorrerá de 01/07/2025 a 15/07/2025. Retorno das aulas em 16/07/2025."
+        titulo: "Passeio ao Zoológico",
+        conteudo: "As inscrições para o Zoológico estão abertas até 01/12/2025. Participe!"
     },
     {
         id: 3,
@@ -17,18 +17,18 @@ let comunicados = [
     },
     {
         id: 4,
-        titulo: "Atualização de Dados",
-        conteudo: "Solicitamos que todos os responsáveis atualizem os dados cadastrais dos alunos até 10/06/2025."
+        titulo: "Recesso Escolar",
+        conteudo: "Informamos que o recesso escolar ocorrerá de 15/12/2025 a 30/01/2026. Retorno das aulas em 02/02/2026."
     },
     {
         id: 5,
-        titulo: "Reunião de Pais",
-        conteudo: "Lembramos que a reunião de pais será realizada no dia 15/06/2025, às 18h, no auditório da escola."
+        titulo: "Atualização de Dados",
+        conteudo: "Solicitamos que todos os responsáveis atualizem os dados cadastrais dos alunos até 02/02/2026."
     },
     {
         id: 6,
-        titulo: "Portal do Aluno",
-        conteudo: "O novo portal do aluno já está disponível! Acesse para acompanhar notas, atividades e comunicados."
+        titulo: "Reunião de Pais",
+        conteudo: "Lembramos que a reunião de pais será realizada no dia 15/03/2026, às 10h, no auditório da escola."
     }
 ];
 
