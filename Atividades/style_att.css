@@ -189,7 +189,7 @@ input {
 footer {
     background-color: #3E558B; /* Cor azul do footer original do usuário */
     color: white;
-    padding: 1px 20px 20px; /* Padding original do usuário */
+    padding: 30px 20px 20px; /* Padding original do usuário */
     text-align: center;
     margin-top: auto;
 }
