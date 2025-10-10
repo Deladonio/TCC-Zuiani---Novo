@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zuiani-Bauru</title>
+    <link rel="stylesheet" href="../global.css">
     <link rel="stylesheet" href="style_index.css">
     <link rel="shortcut icon" href="../favicon_io/favicon.ico" type="image/x-icon">
 </head>

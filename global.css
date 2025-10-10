@@ -1,0 +1,54 @@
+/* Global typography and base resets for the Zuiani site */
+/* Uses system-ui stack with Inter as preferred if available */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  --base-font: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --base-font-size: 16px;
+  --base-line-height: 1.5;
+  --text-color: #222;
+}
+
+/* Apply to entire document */
+html, body {
+  font-family: var(--base-font);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make sure headings inherit the same family but keep visual weight */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--base-font);
+  color: inherit;
+  line-height: 1.25;
+  margin: 0 0 0.5rem 0;
+}
+
+/* Normalize form elements to use the same font */
+input, button, textarea, select, optgroup {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Improve button appearance consistency */
+button {
+  cursor: pointer;
+}
+
+/* Small utility: readable paragraphs */
+p { margin: 0 0 1rem 0; }
+
+/* Images: make sure they don't inherit strange fonts when replaced */
+img { font-family: inherit; }
+
+/* Reduce differences between browsers */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Accessibility: ensure focus outlines are visible */
+:focus { outline: 3px solid #1976d2; outline-offset: 2px; }
+
+/* End of global.css */
