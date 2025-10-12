@@ -56,7 +56,7 @@
             </div>
             <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; min-width: 220px; max-width: 320px; flex: 1 1 220px;">
                 <h3 style="color: #e53935;">Próximo Evento</h3>
-                <p>Visita ao Zoológico - 25/12/2025</p>
+                <p>Visita ao Zoológico - 11/12/2025</p>
                 <p style="font-size: 0.98em;">Alunos e colaboradores. Participem do nosso passeio para o Zoológico de Bauru </p>
             </div>
             <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; min-width: 220px; max-width: 320px; flex: 1 1 220px;">
