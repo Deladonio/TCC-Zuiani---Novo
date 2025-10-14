@@ -40,7 +40,7 @@
     <main>
         <section class="main-destaque" style="text-align:center; padding: 32px 0; background: #f8f8f8; border-radius: 12px; margin-bottom: 32px;">
             <img src="../favicon_io/android-chrome-192x192.png" alt="Logo Zuiani" style="width: 90px; margin-bottom: 12px;">
-            <h1 style="margin-bottom: 8px;">Bem-vindo ao Zuiani-Bauru</h1>
+            <h1 style="margin-bottom: 8px;">Bem-vindo ao Zuiani-Bauru</h1> <br>
             <p style="font-size: 1.1em; max-width: 600px; margin: 0 auto 18px auto;">Instituição dedicada à educação, inclusão e desenvolvimento social em Bauru e região. Transformando vidas por meio de projetos, atividades e eventos.</p>
             <div style="margin: 18px 0 0 0; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
                 <a href="https://sed.educacao.sp.gov.br/" target="_blank" class="botao-saiba-mais" style="background: #1976d2; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none;">Acessar SED</a>
@@ -67,7 +67,7 @@
                 <h3 style="color: #00897b;">Missão & Valores</h3>
                 <p>Promover educação de qualidade, inclusão e desenvolvimento social, formando cidadãos preparados para transformar a sociedade.</p>
             </div>
-        </section>
+        </section> <br>
 
         <a href="../Comunicados/comunicados.php" class="botao-saiba-mais" style="display: block; width: fit-content; margin: 32px auto 0 auto; background: #1976d2; color: #fff; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Acesse todos os comunicados</a>
         <br><br><br>

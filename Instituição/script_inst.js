@@ -19,7 +19,7 @@ const submenuItems = [
         </div>`
     },
 
-    { text: 'Direção', id: 'direcao', content: `<h2>Direção</h2><p>Informações sobre a direção da escola. <br> Fotos da Maria Helena(Diretora), Jussara(Vice Diretora), Gislene(Vice Diretora), Thais (Coordenadora), Camila (Coordenadora), Liliane</p>` },
+    { text: 'Direção', id: 'direcao', content: `<h2>Direção</h2><p>Informações sobre a direção da escola. <br> Fotos da Maria Helena(Diretora), Jussara(Vice Diretora), Gislene(Vice Diretora), Thais (Coordenadora), Liliane (Coordenadora), Lays (Ensino colaborativo da educação especial) Camilla (Professora e Cuidadora da Biblioteca) </p>` },
 
     { text: 'Corpo docente', id: 'docente', content: `<h2>Corpo Docente</h2><p>Lista dos professores e suas áreas de atuação. <br> Sandro(Professor), Aroldo(Professor), Antônio (Professor), Nilson (Professor), Luzia (Professor), Marcela (Professor)</p>` },
 
