@@ -74,6 +74,16 @@
                 <p>Participe de eventos, passeios culturais e projetos temáticos ao longo do ano.</p>
             </div>
         </section>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
     </main>
 
     <br> <br> <br> <br> <br> <br> <br> <br> <br>

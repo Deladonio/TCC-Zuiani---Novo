@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../global.css">
     <link rel="stylesheet" href="style_index.css">
     <link rel="shortcut icon" href="../favicon_io/favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -71,6 +72,16 @@
 
         <a href="../Comunicados/comunicados.php" class="botao-saiba-mais" style="display: block; width: fit-content; margin: 32px auto 0 auto; background: #1976d2; color: #fff; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Acesse todos os comunicados</a>
         <br><br><br>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
     </main>
 
     <footer>
