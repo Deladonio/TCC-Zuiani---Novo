@@ -86,7 +86,7 @@
         </script>
     </main>
 
-    <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br>
 
     <footer>
         <div class="footer-content">
