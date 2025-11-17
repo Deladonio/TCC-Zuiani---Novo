@@ -361,3 +361,35 @@ footer {
   transform: rotate(90deg);
 }
 
+#submenu-instituicao li {
+    margin-bottom: 6px;
+}
+
+/* Garante que a galeria de imagens não afete o menu */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.gallery figure {
+    width: 140px;
+    text-align: center;
+    margin: 0;
+}
+
+.gallery img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    cursor: pointer;
+}
+
+.gallery figcaption {
+    font-weight: 700;
+    margin-top: 6px;
+    font-size: 16px;
+}

@@ -26,39 +26,44 @@ const submenuItems = [
         <h2>Direção</h2>
         <p>Equipe de direção e coordenação. Clique nas imagens para ampliar.</p>
         <div class="gallery" style="display:flex; flex-wrap:wrap; gap:16px; margin-top:12px;">
-            <figure style="width:250px; text-align:center; margin:10;">
+            <figure style="width:250px; text-align:center; margin:10; ">
                 <img src="../favicon_io/mockup.png" alt="Maria Helena - Diretora" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Maria Helena<br><small>Diretora</small></figcaption>
+                <figcaption style="font-weight:700; margin-top:6px;">Maria Helena Vieira Pintão<br><small>Diretora</small></figcaption>
             </figure>
 
-            <figure style="width:150px; text-align:center; margin:10;">
-                <img src="../favicon_io/mockup.png" alt="Jussara - Vice Diretora" style="width:300px; height:250px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Jussara<br><small>Vice Diretora</small></figcaption>
+            <figure style="width:250px; text-align:center; margin:10;">
+                <img src="../favicon_io/mockup.png" alt="Jussara - Vice Diretora" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Jussara Aparecida Gonçalves do Carmo<br><small>Vice Diretora</small></figcaption>
             </figure>
 
-            <figure style="width:150px; text-align:center; margin:10;">
-                <img src="../favicon_io/mockup.png" alt="Gislene - Vice Diretora" style="width:300px; height:250px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+            <figure style="width:250px; text-align:center; margin:10;">
+                <img src="../favicon_io/mockup.png" alt="Gislene - Vice Diretora" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
                 <figcaption style="font-weight:700; margin-top:6px;">Gislene<br><small>Vice Diretora</small></figcaption>
             </figure>
 
-            <figure style="width:150px; text-align:center; margin:10;">
-                <img src="../favicon_io/mockup.png" alt="Thais - Coordenadora" style="width:300px; height:250px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+            <figure style="width:250px; text-align:center; margin:10;">
+                <img src="../favicon_io/mockup.png" alt="Thais - Coordenadora" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
                 <figcaption style="font-weight:700; margin-top:6px;">Thais<br><small>Coordenadora</small></figcaption>
             </figure>
 
-            <figure style="width:150px; text-align:center; margin:10;">
-                <img src="../favicon_io/mockup.png" alt="Liliane - Coordenadora" style="width:300px; height:250px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+            <figure style="width:250px; text-align:center; margin:10;">
+                <img src="../favicon_io/mockup.png" alt="Liliane - Coordenadora" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
                 <figcaption style="font-weight:700; margin-top:6px;">Liliane<br><small>Coordenadora</small></figcaption>
             </figure>
 
-            <figure style="width:150px; text-align:center; margin:10;">
-                <img src="../favicon_io/mockup.png" alt="Lays - Educação Especial" style="width:300px; height:250px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Lays<br><small>Ensino colaborativo - Educação Especial</small></figcaption>
+            <figure style="width:250px; text-align:center; margin:10;">
+                <img src="../favicon_io/mockup.png" alt="Laís - Educação Especial" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Laís Marcondes Guilherme Domingos<br><small>Ensino colaborativo - Educação Especial</small></figcaption>
             </figure>
 
-            <figure style="width:150px; text-align:center; margin:10;">
-                <img src="../favicon_io/mockup.png" alt="Camilla - Biblioteca" style="width:300px; height:250px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Camilla<br><small>Professora / Cuidadora da Biblioteca</small></figcaption>
+            <figure style="width:250px; text-align:center; margin:10;">
+                <img src="../favicon_io/mockup.png" alt="Camila - Biblioteca" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Camila Alexandra Godoy Aceituno<br><small>Professora / Cuidadora da Biblioteca</small></figcaption>
+            </figure>
+
+            <figure style="width:250px; text-align:center; margin:10;">
+                <img src="../favicon_io/mockup.png" alt="Edmar - Coordenador" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Edmar Fogaça da Silva<br><small>Coordenador</small></figcaption>
             </figure>
         </div>
         ` 
@@ -71,34 +76,34 @@ const submenuItems = [
         <h2>Corpo Docente</h2>
         <p>Equipe de professores. Clique nas imagens para ampliar.</p>
         <div class="gallery" style="display:flex; flex-wrap:wrap; gap:16px; margin-top:12px;">
-            <figure style="width:140px; text-align:center; margin:0;">
-                <img src="../Instituição/images/docente/sandro.jpg" alt="Sandro - Professor" style="width:140px; height:140px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Sandro<br><small>Professor</small></figcaption>
+            <figure style="width:250px; text-align:center; margin:0;">
+                <img src="../favicon_io/mockup.png" alt="Sandro - Professor" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Sandro Inácio de Souza<br><small>Professor</small></figcaption>
             </figure>
 
-            <figure style="width:140px; text-align:center; margin:0;">
-                <img src="../Instituição/images/docente/aroldo.jpg" alt="Aroldo - Professor" style="width:140px; height:140px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Aroldo<br><small>Professor</small></figcaption>
+            <figure style="width:250px; text-align:center; margin:0;">
+                <img src="../favicon_io/mockup.png" alt="Aroldo - Professor" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Aroldo César Gonçalves<br><small>Professor</small></figcaption>
             </figure>
 
-            <figure style="width:140px; text-align:center; margin:0;">
-                <img src="../Instituição/images/docente/antonio.jpg" alt="Antônio - Professor" style="width:140px; height:140px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Antônio<br><small>Professor</small></figcaption>
+            <figure style="width:250px; text-align:center; margin:0;">
+                <img src="../favicon_io/mockup.png" alt="Antônio - Professor" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Antônio Carlos do Prado<br><small>Professor</small></figcaption>
             </figure>
 
-            <figure style="width:140px; text-align:center; margin:0;">
-                <img src="../Instituição/images/docente/nilson.jpg" alt="Nilson - Professor" style="width:140px; height:140px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Nilson<br><small>Professor</small></figcaption>
+            <figure style="width:250px; text-align:center; margin:0;">
+                <img src="../favicon_io/mockup.png" alt="Nilson - Professor" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Nilson Santiago de Oliveira<br><small>Professor</small></figcaption>
             </figure>
 
-            <figure style="width:140px; text-align:center; margin:0;">
-                <img src="../Instituição/images/docente/luzia.jpg" alt="Luzia - Professora" style="width:140px; height:140px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Luzia<br><small>Professora</small></figcaption>
+            <figure style="width:250px; text-align:center; margin:0;">
+                <img src="../favicon_io/mockup.png" alt="Luzia - Professora" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Luzia Maria Oreste<br><small>Professora</small></figcaption>
             </figure>
 
-            <figure style="width:140px; text-align:center; margin:0;">
-                <img src="../Instituição/images/docente/marcela.jpg" alt="Marcela - Professora" style="width:140px; height:140px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Marcela<br><small>Professora</small></figcaption>
+            <figure style="width:250px; text-align:center; margin:0;">
+                <img src="../favicon_io/mockup.png" alt="Marcela - Professora" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Marcela Lopes da Silva<br><small>Professora</small></figcaption>
             </figure>
         </div>
         ` 
