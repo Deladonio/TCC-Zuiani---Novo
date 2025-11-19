@@ -23,9 +23,9 @@ const submenuItems = [
         text: 'Direção', 
         id: 'direcao', 
         content: `
-        <h2 style="text-align:center;">Direção</h2>
+        <h2 style="text-align:center;">Equipe Pedagógica</h2> <br>
         <p style="text-align:center;">Equipe de direção e coordenação. Clique nas imagens para ampliar.</p>
-        <div class="gallery" style="display:flex; flex-wrap:wrap; gap:16px; margin-top:12px;">
+        <div class="gallery" style="display:flex; flex-wrap:wrap; gap:16px; margin-top:12px; justify-content:center;">
         
             <figure style="width:250px; text-align:center; margin:10; ">
                 <img src="../favicon_io/mockup.png" alt="Maria Helena - Diretora" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
@@ -74,7 +74,7 @@ const submenuItems = [
         text: 'Corpo docente', 
         id: 'docente', 
         content: `
-        <h2 style="text-align:center;">Corpo Docente</h2>
+        <h2 style="text-align:center;">Corpo Docente</h2> <br>
         <p style="text-align:center;">Equipe de professores. Clique nas imagens para ampliar.</p>
         <div class="gallery" style="display:flex; flex-wrap:wrap; gap:16px; margin-top:12px;">
 
@@ -115,40 +115,50 @@ const submenuItems = [
         text: 'Parcerias', 
         id: 'docente', 
         content: `
-        <h2 style="text-align:center;">Parceria feita com a instituição ETEC (Escola Técnica Estadual Rodrigues de Abreu - Bauru)</h2>
-        <p style="text-align:center;">Equipe de professores do curso de Desenvolvimento de Sistema. Clique nas imagens para ampliar.</p>
-        <div class="gallery" style="display:flex; flex-wrap:wrap; gap:16px; margin-top:12px;">
+        <h2 style="text-align:center;">Parceria - SEDUC CPS ETEC (Escola Técnica Estadual Rodrigues de Abreu - Bauru)</h2> <br>
+        <p style="text-align:center;">Equipe de professores do curso de Desenvolvimento de Sistema. Clique nas imagens para ampliar.</p> 
+        <div class="gallery" style="text-align:center; display:flex; flex-wrap:wrap; gap:16px; margin-top:12px; justify-content:center;">
         
             <figure style="width:250px; text-align:center; ">
                 <img src="../favicon_io/mockup.png" alt="Jefferson - Professor" style="text-align:center; width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
                 <figcaption style="text-align:center; font-weight:700; margin-top:6px;">Jefferson Roger Moreira<br><small>Professor e Coordenador</small></figcaption>
             </figure>
 
-        <p style="text-align:center;">Equipe de professores do curso de Administração. Clique nas imagens para ampliar.</p>
+            <figure style="width:250px; text-align:center; ">
+                <img src="../favicon_io/mockup.png" alt="Gentil - Professor" style="text-align:center; width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="text-align:center; font-weight:700; margin-top:6px;">Gentil José Sevilha Junior<br><small>Professor </small></figcaption>
+            </figure>
+
+        <p>Equipe de professores do curso de Administração. Clique nas imagens para ampliar.</p>
 
             <figure style="width:250px; text-align:center; margin:0;">
-                <img src="../favicon_io/mockup.png" alt="Aroldo - Professor" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Aroldo César Gonçalves<br><small>Professor</small></figcaption>
+                <img src="../favicon_io/mockup.png" alt="Juliana - Professora" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Juliana Maria Quiezi<br><small>Professora</small></figcaption>
+            </figure>
+
+            <figure style="width:250px; text-align:center; margin:0;">
+                <img src="../favicon_io/mockup.png" alt="Fernando - Professor" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Fernando Henrique Rodrigues de Campos<br><small>Professor</small></figcaption>
             </figure>
 
             <figure style="width:250px; text-align:center; margin:0;">
                 <img src="../favicon_io/mockup.png" alt="Antônio - Professor" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Antônio Carlos do Prado<br><small>Professor</small></figcaption>
+                <figcaption style="font-weight:700; margin-top:6px;">Antônio Marçal Sobrinho<br><small>Professor</small></figcaption>
             </figure>
 
             <figure style="width:250px; text-align:center; margin:0;">
-                <img src="../favicon_io/mockup.png" alt="Nilson - Professor" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Nilson Santiago de Oliveira<br><small>Professor</small></figcaption>
+                <img src="../favicon_io/mockup.png" alt="Ozias - Professor" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Ozias Marciliano Galvão<br><small>Professor</small></figcaption>
             </figure>
 
             <figure style="width:250px; text-align:center; margin:0;">
-                <img src="../favicon_io/mockup.png" alt="Luzia - Professora" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Luzia Maria Oreste<br><small>Professora</small></figcaption>
+                <img src="../favicon_io/mockup.png" alt="Luis - Professor" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Luis Gustavo Sposito<br><small>Professor</small></figcaption>
             </figure>
 
             <figure style="width:250px; text-align:center; margin:0;">
-                <img src="../favicon_io/mockup.png" alt="Marcela - Professora" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
-                <figcaption style="font-weight:700; margin-top:6px;">Marcela Lopes da Silva<br><small>Professora</small></figcaption>
+                <img src="../favicon_io/mockup.png" alt="Rodrigo - Professor" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <figcaption style="font-weight:700; margin-top:6px;">Rodrigo Rodrigues<br><small>Professor</small></figcaption>
             </figure>
         </div>
         ` 

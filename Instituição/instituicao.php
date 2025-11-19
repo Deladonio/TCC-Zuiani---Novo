@@ -51,7 +51,7 @@
         <section class="instituicao-hero">
             <h1>Nossa Instituição</h1>
             <p class="instituicao-desc">Conheça a história, missão e equipe da <span class="destaque">E.E. Dr. Luiz Zuiani</span></p>
-        </section>
+        </section> <br>
         <div class="container">
             <aside class="menu-lateral shadow" id="aside-instituicao">
                 <h3 onclick="toggleInstituicao()" id="titulo-instituicao">Instituição <span class="arrow">ᐳ</span></h3>
