@@ -42,7 +42,7 @@
         <section class="main-destaque" style="text-align:center; padding: 32px 0; background: #f8f8f8; border-radius: 12px; margin-bottom: 32px;">
             <img src="../favicon_io/android-chrome-192x192.png" alt="Logo Zuiani" style="width: 90px; margin-bottom: 12px;">
             <h1 style="margin-bottom: 8px;">Bem-vindo ao E.E. Dr. Luiz Zuiani!</h1> <br>
-            <p style="font-size: 1.1em; max-width: 600px; margin: 0 auto 18px auto;">Instituição dedicada à educação, inclusão e desenvolvimento social em Bauru e região. Transformando vidas por meio da inclusão e desenvolvimento social.</p>
+            <p style="font-size: 1.1em; max-width: 600px; margin: 0 auto 18px auto;">Instituição dedicada à educação, transformando vidas por meio da inclusão e desenvolvimento social.</p>
             <div style="margin: 18px 0 0 0; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
                 <a href="https://sed.educacao.sp.gov.br/" target="_blank" class="botao-saiba-mais" style="background: #1976d2; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none;">Acessar SED</a>
                 <a href="https://saladofuturo.educacao.sp.gov.br/" target="_blank" class="botao-saiba-mais" style="background: #43a047; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none;">Sala do Futuro</a>

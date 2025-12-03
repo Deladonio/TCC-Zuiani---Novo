@@ -49,27 +49,27 @@
                 <p>Desenvolva a criatividade com pintura, desenho, escultura e outras técnicas artísticas.</p>
             </div>
             <div class="atividade-card card-reforco">
-                <span class="atividade-icone">📚</span>
+                <span class="atividade-icone"><img src="../favicon_io/pilha-de-livros.png"></span>
                 <h2>Reforço Escolar</h2>
                 <p>Aulas de apoio em matemática, português e ciências para melhorar o desempenho escolar.</p>
             </div>
             <div class="atividade-card card-esportes">
-                <span class="atividade-icone">🏀</span>
+                <span class="atividade-icone"><img src="../favicon_io/quadra-de-futebol.png"></span>
                 <h2>Esportes</h2>
                 <p>Futebol, vôlei, basquete e outras modalidades para incentivar o trabalho em equipe e a saúde.</p>
             </div>
             <div class="atividade-card card-informatica">
-                <span class="atividade-icone">💻</span>
+                <span class="atividade-icone"><img src="../favicon_io/computador.png"></span>
                 <h2>Informática</h2>
                 <p>Aprenda noções básicas de computação, digitação e navegação segura na internet.</p>
             </div>
             <div class="atividade-card card-musica">
-                <span class="atividade-icone">🎵</span>
+                <span class="atividade-icone"><img src="../favicon_io/nota-musical.png"></span>
                 <h2>Música</h2>
                 <p>Aulas de canto, violão e instrumentos para despertar o talento musical.</p>
             </div>
             <div class="atividade-card card-projetos">
-                <span class="atividade-icone">🌟</span>
+                <span class="atividade-icone"><img src="../favicon_io/lista-de-controle.png"></span>
                 <h2>Projetos Especiais</h2>
                 <p>Participe de eventos, passeios culturais e projetos temáticos ao longo do ano.</p>
             </div>

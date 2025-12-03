@@ -127,9 +127,11 @@ const submenuItems = [
             <figure style="width:250px; text-align:center; ">
                 <img src="../favicon_io/mockup.png" alt="Gentil - Professor" style="text-align:center; width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
                 <figcaption style="text-align:center; font-weight:700; margin-top:6px;">Gentil José Sevilha Junior<br><small>Professor </small></figcaption>
-            </figure>
-
+            </figure> 
+            
         <p>Equipe de professores do curso de Administração. Clique nas imagens para ampliar.</p>
+
+        <br><br>
 
             <figure style="width:250px; text-align:center; margin:0;">
                 <img src="../favicon_io/mockup.png" alt="Juliana - Professora" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
