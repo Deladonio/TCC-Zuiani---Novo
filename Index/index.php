@@ -46,7 +46,6 @@
             <div style="margin: 18px 0 0 0; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
                 <a href="https://sed.educacao.sp.gov.br/" target="_blank" class="botao-saiba-mais" style="background: #1976d2; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none;">Acessar SED</a>
                 <a href="https://saladofuturo.educacao.sp.gov.br/" target="_blank" class="botao-saiba-mais" style="background: #43a047; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none;">Sala do Futuro</a>
-                <a href="../Instituição/instituicao.php" class="botao-saiba-mais" style="background: #e53935; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none;">Sobre a Escola</a>
             </div>
         </section>
 
@@ -311,6 +310,7 @@
                 window.addEventListener('resize', onResize);
             })();
         </script>
+        <script src="../global_search.js"></script>
     </main>
 
     <footer>

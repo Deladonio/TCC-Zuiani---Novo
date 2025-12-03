@@ -1,3 +1,23 @@
+<?php
+include_once("../util.php");
+session_start();
+
+// Processa exclusão de post (apenas quando usuário está conectado)
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_id']) && !empty($_SESSION['conectado'])) {
+    $delete_id = intval($_POST['delete_id']);
+    $sql_del = "DELETE FROM posts WHERE id = ? LIMIT 1";
+    if ($stmt_del = $conn->prepare($sql_del)) {
+        $stmt_del->bind_param('i', $delete_id);
+        $stmt_del->execute();
+        $stmt_del->close();
+    }
+    // Após exclusão, redireciona para evitar reenvio do form
+    header('Location: comunicados.php');
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -10,7 +30,6 @@
     <link rel="shortcut icon" href="../favicon_io/favicon.ico" type="image/x-icon">
 </head>
 
-<?php session_start(); ?>
 <body>
 
     <header>
@@ -38,35 +57,42 @@
     <main>
         <div class="comunicados-container">
             <div class="header-comunicados">
-                <?php
-                    if (!empty($_SESSION['conectado'])): ?>
-                        <a class='btn-adicionar' href='adicionar_comu.html'>Adicionar Comunicado</a>
-                    <?php endif; ?>
+                <?php if (!empty($_SESSION['conectado'])): ?>
+                    <a class='btn-adicionar' href='adicionar_comu.php'>Adicionar Comunicado</a>
+                <?php endif; ?>
             </div>
-            <div class="comunicado-item">
-                <h3>Novo Site do Zuiani</h3>
-                <p>O novo site para alunos, pais e docentes já está disponível! Acesse para acompanhar localidade, atividades e comunicados.</p> 
-            </div>
-            <div class="comunicado-item">
-                <h3>Passeio ao Zoológico</h3>
-                <p>As inscrições para o Zoológico estão abertas até 01/12/2025. Participe!</p>
-            </div>
-            <div class="comunicado-item">
-                <h3>Campanha do Agasalho</h3>
-                <p>Estamos arrecadando agasalhos para doação até o final de dezembro. Colabore e ajude quem precisa!</p>
-            </div>
-            <div class="comunicado-item">
-                <h3>Recesso Escolar</h3>
-                <p>Informamos que o recesso escolar ocorrerá de 15/12/2025 a 30/01/2026. Retorno das aulas em 02/02/2026.</p>
-            </div>
-            <div class="comunicado-item">
-                <h3>Atualização de Dados</h3>
-                <p>Solicitamos que todos os responsáveis atualizem os dados cadastrais dos alunos até 02/02/2026.</p>
-            </div>
-            <div class="comunicado-item">
-                <h3>Reunião de Pais</h3>
-                <p>Lembramos que a reunião de pais será realizada no dia 15/03/2026, às 10h, no auditório da escola.</p>
-            </div>
+
+            <?php
+                // Busca os posts na tabela `posts`
+                $sql = "SELECT id, titulo, conteudo FROM posts ORDER BY id DESC";
+                if ($result = $conn->query($sql)) {
+                    if ($result->num_rows === 0) {
+                        echo "<p>Não há comunicados no momento.</p>";
+                    } else {
+                        while ($row = $result->fetch_assoc()) {
+                            $id = (int) $row['id'];
+                            $titulo = htmlspecialchars($row['titulo'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+                            $conteudo = nl2br(htmlspecialchars($row['conteudo'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'));
+                            echo "<div class='comunicado-item'>";
+                            echo "<h3>{$titulo}</h3>";
+                            echo "<p>{$conteudo}</p>";
+
+                            // Botão excluir visível apenas para usuários conectados
+                            if (!empty($_SESSION['conectado'])) {
+                                echo "<form method='post' onsubmit=\"return confirm('Confirmar exclusão deste comunicado?');\" style='display:inline-block;margin-top:8px;'>";
+                                echo "<input type='hidden' name='delete_id' value='{$id}'>";
+                                echo "<button type='submit' class='btn-excluir'>Excluir</button>";
+                                echo "</form>";
+                            }
+
+                            echo "</div>";
+                        }
+                    }
+                    $result->free();
+                } else {
+                    echo "<p>Erro ao carregar comunicados.</p>";
+                }
+            ?>
         </div>
 
         <div vw class="enabled">
@@ -79,6 +105,7 @@
             new window.VLibras.Widget('https://vlibras.gov.br/app');
         </script>
     </main>
+            <script src="../global_search.js"></script>
     
     <br> <br> <br> <br> <br> <br> <br> <br>
 

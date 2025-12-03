@@ -84,6 +84,7 @@
         <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
         </script>
+        <script src="../global_search.js"></script>
     </main>
 
     <br> <br> <br> <br> <br>

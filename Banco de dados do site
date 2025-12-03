@@ -1,0 +1,33 @@
+CREATE DATABASE banco_tcc;
+
+USE banco_tcc;
+
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    conteudo TEXT NOT NULL
+);
+
+
+INSERT INTO posts (titulo, conteudo)
+VALUES
+('Novo Site do Zuiani', 'O novo site para alunos, pais e docentes já está disponível! Acesse para acompanhar localidade, atividades e comunicados.'),
+('Passeio ao Zoológico', 'As inscrições para o Zoológico estão abertas até 01/12/2025. Participe!'),
+('Campanha do Agasalho', 'Estamos arrecadando agasalhos para doação até o final de junho. Colabore e ajude quem precisa!'),
+('Recesso Escolar', 'Informamos que o recesso escolar ocorrerá de 15/12/2025 a 30/01/2026. Retorno das aulas em 02/02/2026.');
+
+create table cadastro (
+	id int auto_increment primary key,
+    email varchar(255) not null,
+    senha varchar(255) not null
+);
+
+insert into cadastro (email, senha)
+values
+('vitor.honda@gmail.com', '12345'),
+('gabriel.deladonio@gmail.com', '12345');
+
+
+select * from posts;
+
+select * from cadastro;
