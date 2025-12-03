@@ -41,7 +41,7 @@
     <main>
         <section class="main-destaque" style="text-align:center; padding: 32px 0; background: #f8f8f8; border-radius: 12px; margin-bottom: 32px;">
             <img src="../favicon_io/android-chrome-192x192.png" alt="Logo Zuiani" style="width: 90px; margin-bottom: 12px;">
-            <h1 style="margin-bottom: 8px;">Bem-vindo ao E.E. Doutor Luiz Zuiani!</h1> <br>
+            <h1 style="margin-bottom: 8px;">Bem-vindo ao E.E. Dr. Luiz Zuiani!</h1> <br>
             <p style="font-size: 1.1em; max-width: 600px; margin: 0 auto 18px auto;">Instituição dedicada à educação, inclusão e desenvolvimento social em Bauru e região. Transformando vidas por meio da inclusão e desenvolvimento social.</p>
             <div style="margin: 18px 0 0 0; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
                 <a href="https://sed.educacao.sp.gov.br/" target="_blank" class="botao-saiba-mais" style="background: #1976d2; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none;">Acessar SED</a>
@@ -58,27 +58,30 @@
                     <div class="carousel-track">
                         <div class="carousel-card">
                             <div class="card">
-                                <h3 style="color: #1976d2;">Horário de Funcionamento</h3>
-                                <p>Segunda a Sexta: <b>7h às 23h</b> <br><br> Sábado e Domingo: <b>Fechado</b></p>
+                                <img src="../Imagens da escola/simulado saresp.jpg" alt="Horário" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 12px;">
+                                <h3 style="color: #1976d2;">Simulado SARESP</h3>
+                                <p>Alunos do terceiro ano realizando o simulado para a prova do SARESP.</p>
                             </div>
                         </div>
                         <div class="carousel-card">
                             <div class="card">
-                                <h3 style="color: #e53935;">Próximo Evento</h3>
-                                <p>Visita ao Zoológico - 11/12/2025</p>
-                                <p style="font-size: 0.98em;">Alunos e colaboradores. Participem do nosso passeio para o Zoológico de Bauru </p>
+                                <img src="../Imagens da escola/premiação honra ao mérito.jpg" alt="Evento" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 12px;">
+                                <h3 style="color: #e53935;">Premiação honra ao mérito</h3>
+                                <p>Nosso aluno do 3º DS recebendo o certificado de honra ao mérito junto com a diretora Maria Helena, vice-diretora Jussara Rodrigues e coordenadora Thaís Ribeiro.</p>
                             </div>
                         </div>
                         <div class="carousel-card">
                             <div class="card">
-                                <h3 style="color: #6d4c41;">Contato</h3>
-                                <p>Telefone: (14) 3203-2553 <br> <br> Email: e025276a@educacao.sp.gov.br</p>
+                                <img src="../Imagens da escola/premiação da obmep.jpg" alt="Contato" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 12px;">
+                                <h3 style="color: #6d4c41;">Premiação OBMEP</h3>
+                                <p>Professora Marcela de matemática e a coordenadora Thaís premiando nossos alunos.</p>
                             </div>
                         </div>
                         <div class="carousel-card">
                             <div class="card">
-                                <h3 style="color: #00897b;">Missão & Valores</h3>
-                                <p>Promover educação de qualidade, inclusão e desenvolvimento social, formando cidadãos preparados para transformar a sociedade.</p>
+                                <img src="../Imagens da escola/aulão saeb.jpg" alt="Missão" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 12px;">
+                                <h3 style="color: #00897b;">Aulão para o SAEB</h3>
+                                <p>Alunos do terceiro ano tendo uma aula dedicada a prova do SAEB.</p>
                             </div>
                         </div>
                     </div>

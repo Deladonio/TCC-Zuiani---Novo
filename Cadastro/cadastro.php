@@ -78,14 +78,16 @@ session_start();
                             echo '<script>alert("Usuário não cadastrado!");</script>';
                             $_SESSION['conectado'] = false;
                         } else {
+                            $id = null;
+                            $hash = null;
                             $stmt->bind_result($id, $hash);
                             $stmt->fetch();
 
                             // Suporta senha em hash (password_hash) ou texto puro
                             $password_ok = false;
-                            if (password_verify($senha, $hash)) {
+                            if ($hash && password_verify($senha, $hash)) {
                                 $password_ok = true;
-                            } elseif ($senha === $hash) {
+                            } elseif ($hash && $senha === $hash) {
                                 $password_ok = true; // caso a senha esteja armazenada em texto simples
                             }
 
