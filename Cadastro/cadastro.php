@@ -52,22 +52,22 @@
                 $senha = $_POST['senha'];
             
                 if ($usuario == "honda" and $senha == "123")
-            {
-                    echo "Conectado com sucesso! <br>";
-                    echo "Usuário: $usuario <br>";
-                    echo "Senha: $senha <br>";
+                {
                     $_SESSION['conectado'] = true; //cria a sessão
                     $_SESSION['usuario'] = $usuario;
-            }   
-            else 
-            {
-                echo "Usuário ou senha inválidos! <br>";
-                $_SESSION['conectado'] = false;
-                $_SESSION['login'] = "";
-            }
 
-            header("Location: ../Comunicados/comunicados.php"); //redireciona para comunicados.php
-        }
+                    // Redireciona somente quando o login for bem-sucedido
+                    header("Location: ../Comunicados/comunicados.php");
+                    exit;
+                }
+                else
+                {
+                    // Mostra um pop-up JavaScript quando o login falhar
+                    $_SESSION['conectado'] = false;
+                    $_SESSION['login'] = "";
+                    echo '<script>alert("Usuário ou senha inválidos!");</script>';
+                }
+            }
         ?>
 
         <div vw class="enabled">

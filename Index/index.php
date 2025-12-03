@@ -41,8 +41,8 @@
     <main>
         <section class="main-destaque" style="text-align:center; padding: 32px 0; background: #f8f8f8; border-radius: 12px; margin-bottom: 32px;">
             <img src="../favicon_io/android-chrome-192x192.png" alt="Logo Zuiani" style="width: 90px; margin-bottom: 12px;">
-            <h1 style="margin-bottom: 8px;">Bem-vindo ao Zuiani-Bauru</h1> <br>
-            <p style="font-size: 1.1em; max-width: 600px; margin: 0 auto 18px auto;">Instituição dedicada à educação, inclusão e desenvolvimento social em Bauru e região. Transformando vidas por meio de projetos, atividades e eventos.</p>
+            <h1 style="margin-bottom: 8px;">Bem-vindo ao E.E. Doutor Luiz Zuiani!</h1> <br>
+            <p style="font-size: 1.1em; max-width: 600px; margin: 0 auto 18px auto;">Instituição dedicada à educação, inclusão e desenvolvimento social em Bauru e região. Transformando vidas por meio da inclusão e desenvolvimento social.</p>
             <div style="margin: 18px 0 0 0; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
                 <a href="https://sed.educacao.sp.gov.br/" target="_blank" class="botao-saiba-mais" style="background: #1976d2; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none;">Acessar SED</a>
                 <a href="https://saladofuturo.educacao.sp.gov.br/" target="_blank" class="botao-saiba-mais" style="background: #43a047; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none;">Sala do Futuro</a>
@@ -50,25 +50,48 @@
             </div>
         </section>
 
-        <section class="main-info" style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;">
-            <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; min-width: 220px; max-width: 320px; flex: 1 1 220px;">
-                <h3 style="color: #1976d2;">Horário de Funcionamento</h3>
-                <p>Segunda a Sexta: <b>7h às 22h</b> <br><br> Sábado e Domingo: <b>Fechado</b></p>
+        <section class="main-info">
+            <div class="carousel">
+                <button class="carousel-btn left" aria-label="Anterior">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.41 16.58L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg>
+                </button>
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
+                        <div class="carousel-card">
+                            <div class="card">
+                                <h3 style="color: #1976d2;">Horário de Funcionamento</h3>
+                                <p>Segunda a Sexta: <b>7h às 23h</b> <br><br> Sábado e Domingo: <b>Fechado</b></p>
+                            </div>
+                        </div>
+                        <div class="carousel-card">
+                            <div class="card">
+                                <h3 style="color: #e53935;">Próximo Evento</h3>
+                                <p>Visita ao Zoológico - 11/12/2025</p>
+                                <p style="font-size: 0.98em;">Alunos e colaboradores. Participem do nosso passeio para o Zoológico de Bauru </p>
+                            </div>
+                        </div>
+                        <div class="carousel-card">
+                            <div class="card">
+                                <h3 style="color: #6d4c41;">Contato</h3>
+                                <p>Telefone: (14) 3203-2553 <br> <br> Email: e025276a@educacao.sp.gov.br</p>
+                            </div>
+                        </div>
+                        <div class="carousel-card">
+                            <div class="card">
+                                <h3 style="color: #00897b;">Missão & Valores</h3>
+                                <p>Promover educação de qualidade, inclusão e desenvolvimento social, formando cidadãos preparados para transformar a sociedade.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn right" aria-label="Próximo">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+                </button>
             </div>
-            <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; min-width: 220px; max-width: 320px; flex: 1 1 220px;">
-                <h3 style="color: #e53935;">Próximo Evento</h3>
-                <p>Visita ao Zoológico - 11/12/2025</p>
-                <p style="font-size: 0.98em;">Alunos e colaboradores. Participem do nosso passeio para o Zoológico de Bauru </p>
-            </div>
-            <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; min-width: 220px; max-width: 320px; flex: 1 1 220px;">
-                <h3 style="color: #6d4c41;">Contato</h3>
-                <p>Telefone: (14) 3203-2553 <br> <br> Email: e025276a@educacao.sp.gov.br</p>
-            </div>
-            <div style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; min-width: 220px; max-width: 320px; flex: 1 1 220px;">
-                <h3 style="color: #00897b;">Missão & Valores</h3>
-                <p>Promover educação de qualidade, inclusão e desenvolvimento social, formando cidadãos preparados para transformar a sociedade.</p>
-            </div>
-        </section> <br>
+            <div class="carousel-dots" aria-hidden="false"></div>
+        </section>
+
+        <br>
 
         <a href="../Comunicados/comunicados.php" class="botao-saiba-mais" style="display: block; width: fit-content; margin: 32px auto 0 auto; background: #1976d2; color: #fff; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Acesse todos os comunicados</a>
         <br><br><br>
@@ -82,6 +105,212 @@
         <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
         </script>
+        <script>
+            // Infinite carousel with clones for seamless looping
+            (function(){
+                const carousel = document.querySelector('.carousel');
+                if (!carousel) return;
+
+                const track = carousel.querySelector('.carousel-track');
+                const prevBtn = carousel.querySelector('.carousel-btn.left');
+                const nextBtn = carousel.querySelector('.carousel-btn.right');
+                const dotsContainer = carousel.querySelector('.carousel-dots');
+
+                let originalHTML = track.innerHTML;
+                let originalCount = 0;
+                let cardsPerView = 1;
+                let index = 0; // current index in track children
+                let autoTimer = null;
+                let resizeTimer = null;
+
+                function calcCardsPerView(){
+                    const w = window.innerWidth;
+                    if (w >= 900) return 3;
+                    if (w >= 600) return 2;
+                    return 1;
+                }
+
+                function build(){
+                    // restore original
+                    track.innerHTML = originalHTML;
+                    const items = Array.from(track.children);
+                    originalCount = items.length;
+                    // create clones
+                    const k = cardsPerView;
+                    const firstClones = [];
+                    const lastClones = [];
+                    for (let i=0;i<k;i++){
+                        const f = items[i % originalCount].cloneNode(true);
+                        firstClones.push(f);
+                        const l = items[(originalCount - k + i) < 0 ? 0 : (originalCount - k + i)].cloneNode(true);
+                        lastClones.push(l);
+                    }
+                    // prepend lastClones
+                    for (let i=lastClones.length-1;i>=0;i--) track.insertBefore(lastClones[i], track.firstChild);
+                    // append firstClones
+                    for (let i=0;i<firstClones.length;i++) track.appendChild(firstClones[i]);
+
+                    // set flex basis for responsive sizes
+                    const all = Array.from(track.children);
+                    all.forEach(c => c.style.flex = `0 0 ${100 / cardsPerView}%`);
+
+                    // set start index to first real item
+                    index = cardsPerView;
+                    track.style.transition = 'none';
+                    const shiftPercent = index * (100 / cardsPerView);
+                    track.style.transform = `translateX(-${shiftPercent}%)`;
+                    // force reflow
+                    track.offsetHeight;
+                    track.style.transition = 'transform 0.5s ease';
+
+                    renderDots();
+                    updateActiveDot();
+                }
+
+                function moveTo(i){
+                    index = i;
+                    const shiftPercent = index * (100 / cardsPerView);
+                    track.style.transform = `translateX(-${shiftPercent}%)`;
+                }
+
+                function next(){ moveTo(index + 1); }
+                function prev(){ moveTo(index - 1); }
+
+                track.addEventListener('transitionend', ()=>{
+                    // when passing clones, jump to corresponding original without animation
+                    if (index < cardsPerView){
+                        // jumped to left clones -> move to equivalent original
+                        index = index + originalCount;
+                        track.style.transition = 'none';
+                        const shiftPercent = index * (100 / cardsPerView);
+                        track.style.transform = `translateX(-${shiftPercent}%)`;
+                        track.offsetHeight;
+                        track.style.transition = 'transform 0.5s ease';
+                    } else if (index >= originalCount + cardsPerView){
+                        // jumped to right clones
+                        index = index - originalCount;
+                        track.style.transition = 'none';
+                        const shiftPercent = index * (100 / cardsPerView);
+                        track.style.transform = `translateX(-${shiftPercent}%)`;
+                        track.offsetHeight;
+                        track.style.transition = 'transform 0.5s ease';
+                    }
+                    updateActiveDot();
+                });
+
+                function renderDots(){
+                    const pages = Math.max(1, Math.ceil(originalCount / cardsPerView));
+                    dotsContainer.innerHTML = '';
+                    for (let p=0;p<pages;p++){
+                        const d = document.createElement('span');
+                        d.className = 'carousel-dot';
+                        d.dataset.page = p;
+                        d.addEventListener('click', ()=>{
+                            moveTo(cardsPerView + p * cardsPerView);
+                            restartAuto();
+                        });
+                        dotsContainer.appendChild(d);
+                    }
+                    updateActiveDot();
+                }
+
+                function updateActiveDot(){
+                    const dots = Array.from(dotsContainer.children);
+                    const page = Math.floor((index - cardsPerView) / cardsPerView) % Math.max(1, Math.ceil(originalCount / cardsPerView));
+                    const active = (page + Math.max(0, Math.ceil(originalCount / cardsPerView))) % Math.max(1, Math.ceil(originalCount / cardsPerView));
+                    dots.forEach((d,i)=> d.classList.toggle('active', i===active));
+                }
+
+                function startAuto(){ stopAuto(); autoTimer = setInterval(()=> next(), 5000); }
+                function stopAuto(){ if (autoTimer) clearInterval(autoTimer); }
+                function restartAuto(){ stopAuto(); startAuto(); }
+
+                prevBtn.addEventListener('click', ()=>{ prev(); restartAuto(); });
+                nextBtn.addEventListener('click', ()=>{ next(); restartAuto(); });
+                carousel.addEventListener('mouseenter', stopAuto);
+                carousel.addEventListener('mouseleave', startAuto);
+
+                // Pointer / touch swipe support (drag to navigate)
+                let isDown = false;
+                let startX = 0;
+                let startTranslate = 0;
+                let cardWidth = 0;
+
+                function getCardWidth(){
+                    const vp = carousel.querySelector('.carousel-viewport');
+                    return vp ? vp.clientWidth / cardsPerView : 0;
+                }
+
+                function onPointerDown(e){
+                    isDown = true;
+                    startX = (e.touches ? e.touches[0].clientX : e.clientX);
+                    cardWidth = getCardWidth();
+                    // compute current translate in px
+                    startTranslate = -index * cardWidth;
+                    track.style.transition = 'none';
+                    stopAuto();
+                }
+
+                function onPointerMove(e){
+                    if (!isDown) return;
+                    const x = (e.touches ? e.touches[0].clientX : e.clientX);
+                    const delta = x - startX;
+                    const translate = startTranslate + delta;
+                    track.style.transform = `translateX(${translate}px)`;
+                }
+
+                function onPointerUp(e){
+                    if (!isDown) return;
+                    isDown = false;
+                    const endX = (e.changedTouches ? e.changedTouches[0].clientX : e.clientX);
+                    const delta = endX - startX;
+                    track.style.transition = 'transform 0.5s ease';
+                    // if moved enough, navigate
+                    if (Math.abs(delta) > Math.max(10, cardWidth * 0.25)){
+                        if (delta < 0) { next(); }
+                        else { prev(); }
+                    } else {
+                        // snap back
+                        const shiftPercent = index * (100 / cardsPerView);
+                        track.style.transform = `translateX(-${shiftPercent}%)`;
+                    }
+                    restartAuto();
+                }
+
+                // pointer events
+                carousel.addEventListener('pointerdown', onPointerDown);
+                window.addEventListener('pointermove', onPointerMove);
+                window.addEventListener('pointerup', onPointerUp);
+                window.addEventListener('pointercancel', onPointerUp);
+                // touch fallback
+                carousel.addEventListener('touchstart', onPointerDown, {passive:true});
+                window.addEventListener('touchmove', onPointerMove, {passive:true});
+                window.addEventListener('touchend', onPointerUp);
+
+                function onResize(){
+                    clearTimeout(resizeTimer);
+                    resizeTimer = setTimeout(()=>{
+                        const newK = calcCardsPerView();
+                        if (newK !== cardsPerView){
+                            cardsPerView = newK;
+                            build();
+                        } else {
+                            // still update flex basis and positions
+                            const all = Array.from(track.children);
+                            all.forEach(c => c.style.flex = `0 0 ${100 / cardsPerView}%`);
+                            const shiftPercent = index * (100 / cardsPerView);
+                            track.style.transform = `translateX(-${shiftPercent}%)`;
+                        }
+                    }, 120);
+                }
+
+                // init
+                cardsPerView = calcCardsPerView();
+                build();
+                startAuto();
+                window.addEventListener('resize', onResize);
+            })();
+        </script>
     </main>
 
     <footer>
@@ -89,6 +318,7 @@
             <div class="footer-text">
                 <h3>Escola Dr. Luiz Zuiani</h3>
                 <p>R. Aviador Gomes Ribeiro, 34-60 - P. Paulistano, Bauru - SP, 17030-530</p>
+                <p>Telefone: (14) 3203-2553</p>
             </div>
 
             <div class="social-midia">

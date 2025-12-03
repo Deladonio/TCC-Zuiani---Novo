@@ -87,6 +87,7 @@
             <div class="footer-text">
                 <h3>Escola Dr. Luiz Zuiani</h3>
                 <p>R. Aviador Gomes Ribeiro, 34-60 - P. Paulistano, Bauru - SP, 17030-530</p>
+                <p>Telefone: (14) 3203-2553</p>
             </div>
 
             <div class="social-midia">

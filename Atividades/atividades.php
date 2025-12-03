@@ -44,7 +44,7 @@
 
         <section class="atividades-grid" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">
             <div class="atividade-card card-artes">
-                <span class="atividade-icone">🎨</span>
+                <span class="atividade-icone"><img src="../favicon_io/icons8-arte-64.png"></span>
                 <h2>Oficina de Artes</h2>
                 <p>Desenvolva a criatividade com pintura, desenho, escultura e outras técnicas artísticas.</p>
             </div>
@@ -93,6 +93,7 @@
             <div class="footer-text">
                 <h3>Escola Dr. Luiz Zuiani</h3>
                 <p>R. Aviador Gomes Ribeiro, 34-60 - P. Paulistano, Bauru - SP, 17030-530</p>
+                <p>Telefone: (14) 3203-2553</p>
             </div>
 
             <div class="social-midia">
