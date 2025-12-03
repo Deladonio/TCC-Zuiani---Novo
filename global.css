@@ -33,6 +33,19 @@ button {
   cursor: pointer;
 }
 
+/* Estilos para o campo de busca na barra vermelha */
+.barra-vermelha input[type="text"],
+.barra-vermelha input[type="search"] {
+  border-radius: 20px;
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+}
+
+.barra-vermelha button {
+  border-radius: 20px;
+  padding: 8px 14px;
+}
+
 p { margin: 0 0 1rem 0; }
 
 img { font-family: inherit; }

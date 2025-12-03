@@ -17,6 +17,9 @@ $q = isset($_GET['q']) ? trim($_GET['q']) : '';
         .search-input { flex:1; display:flex; align-items:center; background:#fff; padding:10px 12px; border-radius: 10px; box-shadow: 0 6px 18px rgba(30,60,120,0.06); border:1px solid #e2e8f0; }
         .search-input input { border:0; outline:none; font-size:16px; width:100%; padding:6px 8px; }
         .search-btn { background:#1976d2; color:#fff; border:none; padding:10px 16px; border-radius:8px; cursor:pointer; font-weight:600; }
+        .back-btn { background:#64748b; color:#fff; border:none; padding:10px 16px; border-radius:8px; cursor:pointer; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:6px; }
+        .back-btn:hover { background:#475569; }
+        .search-btn:hover { background:#1565c0; }
         .search-meta { max-width:900px; margin:18px auto 0 auto; color:#334155; }
         .results { max-width:900px; margin:16px auto 60px auto; }
         .result-card { background:#fff; border-radius:10px; padding:14px; box-shadow: 0 6px 18px rgba(20,40,80,0.04); border:1px solid #eef2ff; margin-bottom:12px; }
@@ -36,6 +39,10 @@ $q = isset($_GET['q']) ? trim($_GET['q']) : '';
                 <input id="q" name="q" type="search" placeholder="Buscar comunicados, eventos, termos..." value="<?php echo htmlspecialchars($q, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>" aria-label="Buscar comunicados">
                 <button class="search-btn" type="submit">Buscar</button>
             </form>
+            <a href="Index/index.php" class="back-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Voltar
+            </a>
         </div>
         <div class="search-meta">
             <small>Pesquise por título ou conteúdo no site.</small>
@@ -120,7 +127,7 @@ $q = isset($_GET['q']) ? trim($_GET['q']) : '';
                 }
             ?>
         <?php endif; ?>
-        <p><a href="Index/index.php">Voltar a página inicial</a></p>
+        </div>
     </main>
 </body>
 </html>
