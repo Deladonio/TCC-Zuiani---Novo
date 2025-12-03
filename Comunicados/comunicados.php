@@ -73,7 +73,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_id']) && !empt
                             $id = (int) $row['id'];
                             $titulo = htmlspecialchars($row['titulo'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
                             $conteudo = nl2br(htmlspecialchars($row['conteudo'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'));
-                            echo "<div class='comunicado-item'>";
+                            // adiciona id para permitir âncoras diretas a partir da busca
+                            echo "<div class='comunicado-item' id='post-{$id}'>";
                             echo "<h3>{$titulo}</h3>";
                             echo "<p>{$conteudo}</p>";
 

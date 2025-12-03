@@ -10,43 +10,117 @@ $q = isset($_GET['q']) ? trim($_GET['q']) : '';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Resultados da Busca</title>
     <link rel="stylesheet" href="global.css">
+    <style>
+        /* Estilos para busca mais agradável */
+        .search-header { padding: 24px 16px; background: linear-gradient(90deg,#f7f9fc,#eef4ff); border-bottom: 1px solid #e6eefc; }
+        .search-bar { max-width: 900px; margin: 0 auto; display:flex; gap:8px; align-items:center; }
+        .search-input { flex:1; display:flex; align-items:center; background:#fff; padding:10px 12px; border-radius: 10px; box-shadow: 0 6px 18px rgba(30,60,120,0.06); border:1px solid #e2e8f0; }
+        .search-input input { border:0; outline:none; font-size:16px; width:100%; padding:6px 8px; }
+        .search-btn { background:#1976d2; color:#fff; border:none; padding:10px 16px; border-radius:8px; cursor:pointer; font-weight:600; }
+        .search-meta { max-width:900px; margin:18px auto 0 auto; color:#334155; }
+        .results { max-width:900px; margin:16px auto 60px auto; }
+        .result-card { background:#fff; border-radius:10px; padding:14px; box-shadow: 0 6px 18px rgba(20,40,80,0.04); border:1px solid #eef2ff; margin-bottom:12px; }
+        .result-card h3 { margin:0 0 6px 0; color:#0f172a; }
+        .result-card p { margin:0; color:#475569; }
+        mark.search-hit { background:#ffeb99; padding:0 2px; border-radius:3px; }
+        .no-results { max-width:900px; margin: 12px auto; color:#475569; }
+        .back-link { display:block; max-width:900px; margin:14px auto; }
+        @media (max-width:640px){ .search-bar{padding:0 8px;} }
+    </style>
 </head>
 <body>
-    <header style="padding:12px; background:#f5f5f5; border-bottom:1px solid #ddd;">
-        <a href="Index/index.php">Início</a> | <a href="Comunicados/comunicados.php">Comunicados</a>
+    <header class="search-header">
+        <div class="search-bar">
+            <form class="search-input" action="search.php" method="get" role="search">
+                <svg width="20" height="20" viewBox="0 0 24 24" style="margin-right:8px;color:#64748b;" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM10 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg>
+                <input id="q" name="q" type="search" placeholder="Buscar comunicados, eventos, termos..." value="<?php echo htmlspecialchars($q, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>" aria-label="Buscar comunicados">
+                <button class="search-btn" type="submit">Buscar</button>
+            </form>
+        </div>
+        <div class="search-meta">
+            <small>Pesquise por título ou conteúdo no site.</small>
+        </div>
     </header>
-    <main style="padding:20px;">
-        <h1>Resultados da busca</h1>
+    <main>
+        <div class="results">
+        <h1 style="max-width:900px;margin:18px auto 6px auto;">Resultados da busca</h1>
         <?php if ($q === ''): ?>
-            <p>Digite um termo para buscar comunicados.</p>
+            <div class="no-results">Digite um termo acima para no site.</div>
         <?php else: ?>
-            <p>Buscando por: <strong><?php echo htmlspecialchars($q, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?></strong></p>
+            <div class="search-meta">Buscando por: <strong><?php echo htmlspecialchars($q, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?></strong></div>
             <?php
-                $like = "%" . $q . "%";
-                $sql = "SELECT id, titulo, conteudo FROM posts WHERE titulo LIKE ? OR conteudo LIKE ? ORDER BY id DESC";
-                if ($stmt = $conn->prepare($sql)) {
-                    $stmt->bind_param('ss', $like, $like);
-                    $stmt->execute();
-                    $res = $stmt->get_result();
-                    if ($res->num_rows === 0) {
-                        echo '<p>Nenhum comunicado encontrado.</p>';
-                    } else {
-                        while ($row = $res->fetch_assoc()) {
-                            $titulo = htmlspecialchars($row['titulo'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-                            $conteudo = nl2br(htmlspecialchars($row['conteudo'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'));
-                            echo "<article style='border:1px solid #ddd;padding:12px;margin:12px 0;border-radius:6px;'>";
-                            echo "<h3>{$titulo}</h3>";
-                            echo "<p>{$conteudo}</p>";
-                            echo "</article>";
+                // --- Busca em arquivos do site inteiro ---
+                $fileResults = [];
+                // Não varrer a raiz '.' para evitar duplicatas; listar pastas principais
+                $searchDirs = ['Index','Instituição','Atividades','Comunicados','Cadastro'];
+                $needle = mb_strtolower($q, 'UTF-8');
+                foreach ($searchDirs as $d) {
+                    $dirPath = __DIR__ . DIRECTORY_SEPARATOR . $d;
+                    if (!is_dir($dirPath)) continue;
+                    $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dirPath));
+                    foreach ($it as $file) {
+                        if (!$file->isFile()) continue;
+                        $ext = strtolower(pathinfo($file->getFilename(), PATHINFO_EXTENSION));
+                        if (!in_array($ext, ['php','html','htm','txt'])) continue;
+                        $fp = $file->getPathname();
+                        // evitar pesquisar neste próprio arquivo de resultados
+                        if (realpath($fp) === realpath(__FILE__)) continue;
+                        $contents = @file_get_contents($fp);
+                        if ($contents === false) continue;
+                        $text = trim(strip_tags($contents));
+                        $lowerText = mb_strtolower($text, 'UTF-8');
+                        $pos = mb_stripos($lowerText, $needle, 0, 'UTF-8');
+                        if ($pos !== false) {
+                            $start = max(0, $pos - 80);
+                            $snippet = mb_substr($text, $start, 300, 'UTF-8');
+                            if ($start > 0) $snippet = '...' . $snippet;
+                            if (mb_strlen($text,'UTF-8') > $start + 300) $snippet .= '...';
+                            $escapedNeedle = preg_quote($q, '/');
+                            $snippet_high = preg_replace_callback('/(' . $escapedNeedle . ')/iu', function($m){ return '<mark class="search-hit">' . $m[0] . '</mark>'; }, $snippet);
+                            $rel = str_replace('\\','/', substr($fp, strlen(__DIR__) + 1));
+                            $fileResults[] = ['path' => $rel, 'snippet' => $snippet_high];
                         }
                     }
-                    $stmt->close();
+                }
+
+                // deduplicar resultados (normalizar com realpath)
+                $unique = [];
+                foreach ($fileResults as $fr) {
+                    $abs = realpath(__DIR__ . DIRECTORY_SEPARATOR . $fr['path']);
+                    $key = $abs ? $abs : $fr['path'];
+                    if (isset($unique[$key])) continue;
+                    $unique[$key] = $fr;
+                }
+                $fileResults = array_values($unique);
+
+                if (count($fileResults) === 0) {
+                    echo '<div class="no-results">Nenhum resultado encontrado no site.</div>';
                 } else {
-                    echo '<p>Erro ao realizar busca.</p>';
+                    // Mapear caminhos de arquivo para títulos bonitos
+                    $titleMap = [
+                        'Index/index.php' => 'Página Inicial',
+                        'Instituição/instituicao.php' => 'Sobre a Instituição',
+                        'Atividades/atividades.php' => 'Atividades',
+                        'Comunicados/comunicados.php' => 'Comunicados',
+                        'Cadastro/cadastro.php' => 'Cadastro',
+                        'search.php' => 'Busca',
+                    ];
+
+                    foreach ($fileResults as $fr) {
+                        $link = htmlspecialchars($fr['path'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+                        // Usar título mapeado ou o nome do arquivo
+                        $displayTitle = isset($titleMap[$fr['path']]) ? $titleMap[$fr['path']] : basename($link);
+                        
+                        echo "<article class='result-card'>";
+                        echo "<h3><a href='" . $link . "' style='color:inherit;text-decoration:none;'>" . $displayTitle . "</a></h3>";
+                        echo "<p>" . $fr['snippet'] . "</p>";
+                        echo "</article>";
+                    }
+                    echo "<div style='max-width:900px;margin:6px auto;color:#334155;'><strong>" . count($fileResults) . "</strong> resultado(s) encontrados.</div>";
                 }
             ?>
         <?php endif; ?>
-        <p><a href="Comunicados/comunicados.php">Voltar aos comunicados</a></p>
+        <p><a href="Index/index.php">Voltar a página inicial</a></p>
     </main>
 </body>
 </html>
