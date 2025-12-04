@@ -22,6 +22,12 @@
 
 <body>
 
+    <!-- Modal Lightbox para ampliação de imagens -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Imagem ampliada">
+    </div>
+
     <header>
         <?php session_start(); ?>
         <div class="barra-vermelha">

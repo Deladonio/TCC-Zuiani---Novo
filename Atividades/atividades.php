@@ -42,7 +42,7 @@
             <a href="https://docs.google.com/forms/d/1GTfVKBD2kzCAdnnBHWL-HH170kiUzbuYRDnj_HeKdUI/edit"  target="_blank" class="botao-inscricao">Quero participar!</a>
         </section>
 
-        <section class="atividades-grid" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">
+        <section class="atividades-grid" style=" justify-content: center;">
             <div class="atividade-card card-artes">
                 <span class="atividade-icone"><img src="../favicon_io/icons8-arte-64.png"></span>
                 <h2>Oficina de Artes</h2>

@@ -13,6 +13,12 @@
 
 <body>
 
+    <!-- Modal Lightbox para ampliação de imagens -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Imagem ampliada">
+    </div>
+
     <header>
         <?php session_start(); ?>
         <div class="barra-vermelha">
@@ -58,28 +64,28 @@
                     <div class="carousel-track">
                         <div class="carousel-card">
                             <div class="card">
-                                <img src="../Imagens da escola/simulado saresp.jpg" alt="Horário" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 12px;">
+                                <img src="../Imagens da escola/simulado saresp.jpg" alt="Horário" class="image-ampliada" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 12px; cursor: pointer;">
                                 <h3 style="color: #1976d2;">Simulado SARESP</h3>
                                 <p>Alunos do terceiro ano realizando o simulado para a prova do SARESP.</p>
                             </div>
                         </div>
                         <div class="carousel-card">
                             <div class="card">
-                                <img src="../Imagens da escola/premiação honra ao mérito.jpg" alt="Evento" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 12px;">
+                                <img src="../Imagens da escola/premiação honra ao mérito.jpg" alt="Evento" class="image-ampliada" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 12px; cursor: pointer;">
                                 <h3 style="color: #e53935;">Premiação honra ao mérito</h3>
                                 <p>Nosso aluno do 3º DS recebendo o certificado de honra ao mérito junto com a diretora Maria Helena, vice-diretora Jussara Rodrigues e coordenadora Thaís Ribeiro.</p>
                             </div>
                         </div>
                         <div class="carousel-card">
                             <div class="card">
-                                <img src="../Imagens da escola/premiação da obmep.jpg" alt="Contato" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 12px;">
+                                <img src="../Imagens da escola/premiação da obmep.jpg" alt="Contato" class="image-ampliada" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 12px; cursor: pointer;">
                                 <h3 style="color: #6d4c41;">Premiação OBMEP</h3>
                                 <p>Professora Marcela de matemática e a coordenadora Thaís premiando nossos alunos.</p>
                             </div>
                         </div>
                         <div class="carousel-card">
                             <div class="card">
-                                <img src="../Imagens da escola/aulão saeb.jpg" alt="Missão" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 12px;">
+                                <img src="../Imagens da escola/aulão saeb.jpg" alt="Missão" class="image-ampliada" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 12px; cursor: pointer;">
                                 <h3 style="color: #00897b;">Aulão para o SAEB</h3>
                                 <p>Alunos do terceiro ano tendo uma aula dedicada a prova do SAEB.</p>
                             </div>
@@ -314,6 +320,46 @@
             })();
         </script>
         <script src="../global_search.js"></script>
+
+        <!-- Script para controlar o Lightbox de imagens -->
+        <script>
+            (function() {
+                const lightbox = document.getElementById('lightbox');
+                const lightboxImg = document.getElementById('lightbox-img');
+                const lightboxClose = document.querySelector('.lightbox-close');
+                const ampliableImages = document.querySelectorAll('.image-ampliada');
+
+                // Abrir lightbox ao clicar na imagem
+                ampliableImages.forEach(img => {
+                    img.addEventListener('click', function() {
+                        lightboxImg.src = this.src;
+                        lightbox.classList.add('active');
+                    });
+                });
+
+                // Fechar lightbox ao clicar no X
+                lightboxClose.addEventListener('click', closeLightbox);
+
+                // Fechar lightbox ao clicar fora da imagem
+                lightbox.addEventListener('click', function(e) {
+                    if (e.target === lightbox) {
+                        closeLightbox();
+                    }
+                });
+
+                // Fechar lightbox ao pressionar ESC
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape') {
+                        closeLightbox();
+                    }
+                });
+
+                function closeLightbox() {
+                    lightbox.classList.remove('active');
+                    lightboxImg.src = '';
+                }
+            })();
+        </script>
     </main>
 
     <footer>
