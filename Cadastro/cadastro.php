@@ -31,7 +31,7 @@ session_start();
             </div>
 
             <div>
-                <input type="text" placeholder="Buscar...">
+                <input type="text" placeholder="Buscar comunicados, eventos, termos...">
                 <button>Buscar</button>
             </div>
         </div>

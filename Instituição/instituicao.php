@@ -45,8 +45,16 @@
             </div>
 
             <div>
-                <input type="text" placeholder="Buscar...">
-                <button>Buscar</button>
+                <form class="search-input" action="/TCC-Zuiani---Novo-main/search.php" method="get" role="search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" style="margin-right:8px;color:#64748b;" aria-hidden="true">
+                    <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5
+                        6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19
+                        l-4.99-5zM10 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+                    </svg>
+                    <input id="q" name="q" type="search" placeholder="Buscar comunicados, eventos, termos..." 
+                    value="" aria-label="Buscar comunicados">
+                    <button class="search-btn" type="submit">Buscar</button>
+                </form>
             </div>
     
         </div>

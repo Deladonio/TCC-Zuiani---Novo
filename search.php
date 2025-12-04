@@ -34,7 +34,7 @@ $q = isset($_GET['q']) ? trim($_GET['q']) : '';
 <body>
     <header class="search-header">
         <div class="search-bar">
-            <form class="search-input" action="search.php" method="get" role="search">
+            <form class="search-input" action="/TCC-Zuiani---Novo-main/search.php" method="get" role="search">
                 <svg width="20" height="20" viewBox="0 0 24 24" style="margin-right:8px;color:#64748b;" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM10 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg>
                 <input id="q" name="q" type="search" placeholder="Buscar comunicados, eventos, termos..." value="<?php echo htmlspecialchars($q, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>" aria-label="Buscar comunicados">
                 <button class="search-btn" type="submit">Buscar</button>
