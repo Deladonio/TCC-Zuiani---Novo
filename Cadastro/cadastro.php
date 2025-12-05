@@ -26,7 +26,7 @@ session_start();
                 <a href="../Atividades/atividades.php">Atividades</a>
                 <a href="../Comunicados/comunicados.php">Comunicados</a>
                 <?php if (!isset($_SESSION['conectado']) || $_SESSION['conectado'] !== true): ?>
-                    <a href="../Cadastro/cadastro.php">Cadastro</a>
+                    <a href="../Cadastro/cadastro.php">Administração de Comunicados</a>
                 <?php endif; ?>
             </div>
 

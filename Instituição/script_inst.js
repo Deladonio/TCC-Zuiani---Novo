@@ -139,7 +139,7 @@ const submenuItems = [
             </figure>
 
             <figure style="width:250px; text-align:center; margin:0;">
-                <img src="../imagens_coordenação/marçal.jpg" alt="Antônio - Professor" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
+                <img src="../imagens_coordenação/marça.jpg" alt="Antônio - Professor" style="width:200px; height:200px; object-fit:cover; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.12); cursor:pointer;" onclick="window.open(this.src,'_blank')" onerror="this.onerror=null;this.src='../favicon_io/android-chrome-192x192.png'">
                 <figcaption style="font-weight:700; margin-top:6px;">Antônio Marçal Sobrinho<br><small>Professor</small></figcaption>
             </figure>
 
